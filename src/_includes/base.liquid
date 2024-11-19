@@ -1,0 +1,124 @@
+---
+menu:
+  - - - /
+    - Getting Started
+  - - - /documentation/
+      - /documentation/green-leds/
+      - /documentation/interfaces/
+      - /documentation/system-description/
+      - /documentation/about_home-assistant_green/
+      - /guides/shutdown/
+      - /guides/start_up_after_power_off/
+      - /guides/reset/
+      - /guides/use-terminal/
+      - /guides/create-backup/
+      - /guides/restore-backup/
+      - /resources/
+      - /downloads/
+      - /videos/
+    - Documentation
+  - - - /faq/
+    - FAQ
+---
+
+{% comment %}
+<!-- prettier-ignore -->
+{% endcomment %}
+
+{% capture css %}
+  {% include "style.css" %}
+{% endcapture %}
+
+{% capture full_title -%}
+{%- if title -%}
+{{ title }} – Home Assistant Green
+{%- elsif guideName -%}
+{{ guideName }} – Home Assistant Green
+{%- else -%}
+Home Assistant Green
+{%- endif -%}
+{%- endcapture %}
+{% comment %}
+<!-- prettier-unignore -->
+{% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ full_title }}</title>
+    <meta name="description" content="{{ description }}" />
+    <meta name="viewport" content="width=device-width" />
+    <meta property="og:title" content="{{ full_title }}" />
+    <link rel="icon" type="image/png" href="https://brands.home-assistant.io/homeassistant_green/icon.png">
+    <script
+      src="https://kit.fontawesome.com/ee3aba475c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    {{ css }}
+    .buy-button {
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <a class="logo" href="/"
+          >
+          <picture>
+            <source srcset="/images/ha_green_logo_white.png" media="(prefers-color-scheme: dark)">
+            <img src="/images/ha_green_logo.png" alt="Home Assistant Green" />
+          </picture>
+        </a>
+        <ul>
+          {% for item in menu %}
+          <li>
+            <a
+              class="{% if item[0] contains page.url %}active{% endif %}"
+              href="{{ item[0][0] }}"
+              >{{ item[1] }}</a
+            >
+          </li>
+          {% endfor %}
+          <li>
+            <a
+              class="buy-button"
+              target="_blank"
+              href="https://www.home-assistant.io/green"
+              >Buy</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">{{ content }}</div>
+
+    <div class="container">
+      <div class="footer">
+        <div>
+          Home&nbsp;Assistant Green &nbsp; – &nbsp;
+          <a href="mailto:green@home-assistant.io">Support</a>
+          &nbsp; – &nbsp;
+          <a href="https://www.github.com/home-assistant" target="_blank"
+            >GitHub</a
+          >
+          &nbsp; – &nbsp;
+          <a href="https://discord.com/invite/home-assistant" target="_blank"
+            >Discord#hardware</a
+          >
+          &nbsp; – &nbsp;
+          <a href="https://www.home-assistant.io/" target="_blank"
+            >home-assistant.io</a
+          >
+          &nbsp; – &nbsp;
+          <a href="https://www.nabucasa.com/" target="_blank"
+            >Nabu Casa</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

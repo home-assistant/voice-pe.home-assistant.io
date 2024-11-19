@@ -1,0 +1,9 @@
+{
+	"name": "voice-pe.home-assistant.io",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:0-20-bullseye",
+	"forwardPorts": [
+		8080
+	],
+	"postCreateCommand": "yarn install",
+	"remoteUser": "node"
+}

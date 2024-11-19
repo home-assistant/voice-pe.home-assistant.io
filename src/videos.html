@@ -1,0 +1,35 @@
+---
+layout: base
+title: Videos
+videos:
+  - url: "https://www.youtube.com/embed/Z4gvkmJ8q48"
+    title: "Ultimate Home Assistant Beginner’s Guide!"
+  - url: "https://www.youtube.com/embed/MvqN0csPwcs"
+    title: "Home Assistant Green - Home Assistant has never been this EASY!"
+  - url: "https://www.youtube.com/embed/42GKCaB1xSg"
+    title: "Home Assistant Green - A Smart Home Hub for beginners!"
+  - url: "https://www.youtube.com/embed/YqR4kUxlumM"
+    title: "Unboxing the NEW Home Assistant Green"
+  - url: "https://www.youtube.com/embed/Xp02Gukc6yA?si=z3IflafkWHjmeEKy"
+    title: "It's here: Home Assistant Green. Ultimate start hub"
+  - url: "https://www.youtube.com/embed/vXl-Btmu5jE?si=wbWzr-clepvqZMJh"
+    title: "Let's have a look at Home Assistant Green"
+  - url: "https://www.youtube.com/embed/3rNz8NS2hfU"
+    title: "Best Smart Home Hub for Beginners? (Unboxing and Review)"
+---
+
+<div class="videos">
+  {% for video in videos %}
+  <div class="video">
+    <iframe
+      width="650"
+      height="365"
+      src="{{ video.url}}"
+      title="{{ video.title}}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  {% endfor %}
+</div>
