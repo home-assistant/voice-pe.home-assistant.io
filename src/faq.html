@@ -1,94 +1,41 @@
 ---
 layout: base
 title: FAQ
-description: FAQ | Green
+Symptom: FAQ | Green
 sections:
   - name: General
     faqs:
       - title: >
-          I can’t access the system via http://homeassistant.local:8123, what can I do?
+          My device crashed
         content: >      
-          <p>
-            <ol>
-              <li>If <a href="http://homeassistant.local:8123" target="_blank">http://homeassistant.local:8123</a> doesn't work, try <a href="http://homeassistant:8123" target="_blank">http://homeassistant:8123</a>.
-                If that does not help, you may be able to find the IP address of Home
-                Assistant Green on your router. The URL will be <code>http://&lt;IP ADDRESS>:8123</code></li>
-              <li>Check if the Home Assistant Green is plugged in and the yellow LED blinks in a heartbeat pattern. For more information on the LED patterns, see <a href="/documentation/green-leds/" >Home Assistant Green LEDs</a>.
-                <div style="padding: 8px 0px 0px 0px">
-                  <img src="/images/green_yellow_led_heartbeat.webp" width="450" />
-                </div></li>
-              <li>Check if the LED on the Ethernet port is active. If it is not active, try the following:
-                <ul>
-                  <li>Try using a different port on your router.</li>
-                  <li>Try using a different Ethernet cable.</li>
-                </ul>
+          <p><b>Symptom</b>: The device was set up successfully and has been used for a while. However, it crashes when playing music and turning it up loud.</p>
+          <p><b>Resolution</b>:  Make sure the USB-C plug supplies enough power. The device requires 5 V DC, 2 A. Try a different plug.<p>
+  - name: Wake word
+    faqs:
+      - title: >
+          The device doesn’t react to my wake word, what can I do?
+        content: >      
+          <p><b>Symptom</b>: The device was set up successfully and has been used for a while. But now, it no longer responds to the wake word.
+          </p>
+          <p><b>Resolution</b>:  Try a different wake word.
+          The standard options are <i>Okay Nabu</i>, <i>Hey Jarvis</i>, and <i>Hey Mycroft</i>.<p>
+      - title: >
+          I changed the wake word but it does not apply, what can I do?
+        content: >      
+          <p><b>Symptom</b>: You changed the Assistant or the wake word or both via the normal configuration settings shown below, but the changes are not applied. 
+            <div style="padding: 8px 0px 0px 0px">
+              <img src="/images/voice_change_config_02.png" width="300"/>
+              <img src="/images/voice_voice_assistant_settings.png" width="300"/>
+            </div>
+          </p>
+          <p><b>Resolution: use the wizard</b>
+            <ul>
+              <li>To change the wake word, follow the steps on <a href="/guides/" >Changing the wake word or Assistant</a>.</p>
               </li>
-            </ol>
-          </p>
-      - title: >
-          Why is there an optional CR2032 battery? Do I need to add one?
-        content: >      
-          <p>
-            <ul>
-              <li>The battery serves as a backup power supply for the real-time clock.</li>
-              <li>You need to install a battery only if you are planning to boot the Home Assistant Green in an environment where there is no internet connection for an extended period of time. Then the clock cannot synchronize.</li>
-              <li>When installing the CR2032 battery, make sure the positive side is facing upwards. You should see the plus sign on top.</li>
+              <li><b>Info</b>: The wake word and Assistant choices are stored on the device and can only be changed via the wizard. The normal configuration settings under <b>Settings</b>  > <b>Voice assistant</b> are not written to the device and don’t apply.
+              </li> 
             </ul>
-          </p>
-      - title: >
-          I forgot the owner password for the Home Assistant Green. How can I reset it?
-        content: >      
           <p>
-            <ol>
-              <li>If you forgot the owner's password, you need to connect an external monitor and keyboard to Home Assistant Green and reset the password via terminal. To do this, follow the steps on <a href="/guides/use-terminal/" target="_blank">Using the console on the HDMI display</a>.</li>
-              <li>To reset the password, enter <code>auth reset --username existing_user --password new_password</code>.</li>
-              <li><b>Note</b>: <code>existing_user</code> and <code>new_password</code> are placeholders. Replace them with your username and desired password.
-                <div style="padding: 8px 0px 0px 0px">
-                  <img src="/images/home-assistant-cli.webp" />
-                </div></li></li>
-            </ol>
-          </p>
-  - name: Connectivity
-    faqs:
-      - title: >
-          Does Home Assistant Green have Zigbee, Thread, Wi-Fi, or Bluetooth?
-        content: >      
-          <p>
-            <ul>
-              <li>No. Home Assistant Green does not have any onboard radios.</li>
-              <li>For Zigbee or Thread, you can use a <a href="https://www.home-assistant.io/connectzbt1" >Home Assistant Connect ZBT-1</a>.</li>
-              <li>For Bluetooth, you can use <a href="https://esphome.io/projects/?type=bluetooth" >
-                an ESPHome as a Bluetooth proxy</a> or add a USB dongle and use <a href="https://www.home-assistant.io/integrations/bluetooth/" >
-                  local Bluetooth support</a>.</li>
-            </ul>
-          </p>
-      - title: >
-          Can I connect a Wi-Fi dongle?
-        content: >      
-          <p>
-            <ul>
-              <li>It is not recommended to use Home Assistant Green with a Wi-Fi dongle.</li>
-              <li>The controller of your smart home should have a reliable, stable wired connection at all times.</li>
-            </ul>
-          </p>
-      - title: >
-          Can I connect a Z-Wave or Zigbee USB dongle?
-        content: >      
-          <p>
-            <ul>
-              <li>Yes, you can connect both a Z-Wave and a Zigbee stick via USB. For Zigbee, you could use a <a href="https://www.home-assistant.io/connectzbt1" >Home Assistant Connect ZBT-1</a>.</li>
-            </ul>
-          </p>
-  - name: Power supply
-    faqs:
-      - title: >
-          I lost the original power supply. What type do I need to get?
-        content: >      
-          <p>
-            <ul>
-              <li>Home Assistant Green ships with a 12 V DC, 1 A, center-positive power supply.</li>
-            </ul>
-          </p>
       
 ---
   <div class="container">
