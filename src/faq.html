@@ -11,6 +11,24 @@ sections:
           <p><b>Symptom</b>: The device was set up successfully and has been used for a while. However, it crashes when playing music and turning it up loud.</p>
           <p><b>Resolution</b>:  Make sure the USB-C plug supplies enough power. The device requires 5 V DC, 2 A. Try a different plug.<p>
       - title: >
+          I don't get a voice response
+        content: >      
+          <p><b>Symptom</b>: My voice assistant understands me and processes the command, but I don’t get a voice response.
+          </p>     
+          <p><b>Description</b>: The voice response is generated in Home Assistant by one of our supported text-to-speech (or TTS) engines. The voice assistant device then fetches the audio file from Home Assistant and plays it back.
+            This fetching process only works if Home Assistant can communicate its own URL to the device. If you have a complex network setup, or if you changed this setting in the past, the URL communicated could be wrong.            
+          </p>
+          <p><b>Resolution</b>: Check the Home Assistant URL.             
+            <ol>
+              <li>Go to your <a class="my" href="https://my.home-assistant.io/redirect/profile/" target="_blank"><b>user profile</b></a> and enable <b>Advanced mode</b>.</li>
+              <li><a class="my" href="https://my.home-assistant.io/redirect/network/" target="_blank"><b>Settings</b> > <b>System</b> > <b>Network</b></a>.</li>
+              <li>Change your <b>Local Network</b> Home Assistant URL to a URL that can be reached locally and that points to Home Assistant.</li>
+              <li>For most users, the <b>Automatic</b> option works and is recommended. 
+                <div style="padding: 8px 0px 0px 0px">
+                  <img src="/images/local_network_automatic.png" width="300"/>
+                </div></li>
+            </ol>
+      - title: >
           Can’t connect to Wi-Fi during onboarding
         content: >      
           <p><b>Symptom</b>: During onboarding of the device, you cannot connect the device to your Wi-Fi.</p>
@@ -26,7 +44,7 @@ sections:
                   <li>If it still does not work, try a different Bluetooth proxy.</li>
                 </ul>
               </li>
-            </ol>  
+            </ol>
           <p>
   - name: Wake word
     faqs:
@@ -44,7 +62,7 @@ sections:
             <div style="padding: 8px 0px 0px 0px">
               <img src="/images/voice_change_config_02.png" width="300"/>
               <img src="/images/voice_voice_assistant_settings.png" width="300"/>
-            </div>
+            </div>local_network_automatic
           </p>
           <p><b>Resolution: use the wizard</b>
             <ul>
