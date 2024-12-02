@@ -1,56 +1,28 @@
 ---
 layout: troubleshooting-guide
-description: Home Assistant Green
+description: Home Assistant Voice Preview Edition
 guideName: Resetting the device
-tools:
-  title: Prerequisites
-  image: green_without_sd_card.png
-  content: |
-    <ul>
-        <li>Home&nbsp;Assistant Green</li>
-        <li>Home Assistant Operating System 13.1 or later installed. <ul><li>To see which version you have, go to <a class="my" href="https://my.home-assistant.io/redirect/info/" target="_blank"><b>Settings</b> > <b>About</b></a>.</li></ul></li>
-        <li>PC with internet access</li>
-        <li>You have <a href="/guides/create-backup/"
-          target="_blank">created a backup</a> and stored it on another system.</li>
-    </ul>
 ---
 
 <div class="container">
   <div><h1 class="text-center"></h1></div>
   <div class="layout horizontal">         
       <div class="layout vertical">
-        <p>Perform this procedure if you have Home Assistant 13.1 or later and you want to do a factory reset. If you have a new device, you likely have an older version of Home Assistant Operating System (older than 13.1). In this case, <a href="/guides/reset_with_sd_card/">Reset the device using an SD card</a>.</p>
+        <p>A device reset deletes the Wi-Fi credentials and the light settings from Home Assistant Voice. The device does not store any other user data. After a reset, the device is ready for a new onboarding process. This may be necessary, for example, when you want to give the device to someone else or if you want to use it in a new environment with different Wi-Fi credentials.</p>
       </div>
     </a>
   </div>
 </div>
 
-{% render "tools.include.liquid", tools: tools %}
-
-<div class="container">
-  <div class="alert alert-note">
-    <p class="alert-title">Note</p>
-    <p class="alert-content">This process clears the data disk on your Green. Unless you <a href="/guides/create-backup/"
-      target="_blank">create a backup</a>, you will lose all data and configuration settings.</br></br>
-       A device reset wipes the data partition of your device. It removes all user data as well as Home Assistant Core, Supervisor, and any installed add-ons. The Home Assistant operating system stays on the system.</br></br>
-      Once a device wipe is initiated, the data partition is marked as to be cleared on boot. Then, the system reinstalls the latest version of all Home Assistant components.</p>
-  </div>
-</div>  
-
-
-{% render "proc.include.liquid", proc: procedureFactoryResetNew %}
+{% render "proc.include.liquid", proc: procedureFactoryReset %}
 
 <div class="container">
   
   <div class="text">         
     <h1>Related topics</h1>
     <span>
-      <ul><li><a href="/guides/create-backup/"
-        target="_blank">Creating a backup</a></li>
-        <li><a href="https://www.home-assistant.io/getting-started/onboarding/"
-          target="_blank">Onboarding</a></li>
-        <li><a href="/faq/#i-can-t-access-the-system-via-http-homeassistant-local-8123-what-can-i-do"
-          target="_blank">Can't access homeassistant.local:8123</a></li>
+      <ul><li><a href="https://www.home-assistant.io/common-tasks/general/#removing-an-integration-instance"
+        target="_blank">Removing an integration instance</a></li>
       </ul>
     </span>
   </div>
