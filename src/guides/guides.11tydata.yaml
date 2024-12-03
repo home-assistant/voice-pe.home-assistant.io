@@ -57,3 +57,28 @@ procedureWakeSoundToggle:
         <ul>
           <li>Under <b>Configuration</b>, toggle the wake sound switch.</li>
         </ul>
+procedureStop:
+  title: Stopping the current process
+  steps:
+    - title: Option 1 - Press the center button
+      image: voice_press_center_button.png
+      content: |
+        <ul>
+          <li>To stop whatever the device is doing, press the center button.
+          <ul>
+            <li><b>Result</b>: The device stops the following: 
+              <ul>
+                <li>Stops the timer.</li>
+                <li>Stops giving an answer.</li>
+                <li>Stops listening.</li>
+                <li>Stops playing music.</li>
+              </ul>
+            </li>
+          </li>
+        </ul>
+    - title: Option 2 - Say “stop”
+      image: voice_say_stop.png
+      content: |
+        <ul>
+          <li>To stop the timer or the response, you can say “stop”.</li>
+        </ul>
