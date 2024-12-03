@@ -48,3 +48,12 @@ procedureMute:
           <li>To use the mute function in the UI, under <b>Configuration</b>, toggle the Mute Switch.</li>
           <li><b>Info</b>:  The switch in the UI does not work when the physical switch is in the muted position..</li>
         </ul>
+procedureWakeSoundToggle:
+  title: Turning the wake sound on or off
+  steps:
+    - title: Toggle the wake sound switch
+      image: voice_wake_sound.png
+      content: |
+        <ul>
+          <li>Under <b>Configuration</b>, toggle the wake sound switch.</li>
+        </ul>
