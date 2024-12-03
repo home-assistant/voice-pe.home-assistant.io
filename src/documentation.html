@@ -17,14 +17,12 @@ operation:
     url: /guides/mute
   - title: Turning the wake sound on or off
     url: /guides/wake_sound_toggle
-data:
-  - title: Creating a backup
-    url: /guides/create-backup
-  - title: Restoring/migrating from a backup
-    url: /guides/restore-backup
+update:
+  - title: Updating the device firmware
+    url: /guides/update
 troubleshooting:
   - title: Resetting the device
-    url: /guides/reset
+    url: /guides/update
 ---
 
 <div class="container">
@@ -44,9 +42,9 @@ troubleshooting:
     </a>
     {% endfor %}
   </div>
-  <h2>Handling data</h2>
+  <h2>Update</h2>
   <div class="layout horizontal items">
-    {% for guide in data %}
+    {% for guide in update %}
     <a href="{{guide.url}}">
       <div class="layout vertical center">{{guide.title}}</div>
     </a>
