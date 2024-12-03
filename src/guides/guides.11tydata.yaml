@@ -82,6 +82,23 @@ procedureStop:
         <ul>
           <li>To stop the timer or the response, you can say “stop”.</li>
         </ul>
+procedureActiveColor:
+  title: Changing the active color
+  steps:
+    - title: Option 1 - Change the active color on the device
+      image: voice_press_center_button.png
+      content: |
+        <ul>
+          <li>Press and hold the button and turn the dial until you see the color you like.</li>
+          <li>When you see the color you like, let go of the button.</li>
+          <li><b>Result</b>: The device changes the active color.</li>
+        </ul>
+    - title: Option 2 - Change the active color from the UI
+      image: voice_change_ring_color_02.png
+      content: |
+        <ul>
+          <li>Under <b>Configuration</b>, select the ring icon and change the color.</li>
+        </ul>
 procedureWakeWordChange:
   title: Changing the wake word
   steps:
