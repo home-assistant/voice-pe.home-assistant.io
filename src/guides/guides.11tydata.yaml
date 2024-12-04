@@ -131,7 +131,7 @@ procedureAutomate:
           </li>
         </ul>
     - title: Check out the automation example in YAML.
-      image: voice_automation_yaml.png
+      image: voice_button_press_352.webp
       content: |
         <ul>
           <li>For inspiration, check out the <a href="https://www.home-assistant.io/integrations/event/#automating-on-a-button-press" target="_blank">automation example in YAML</a>.</li>
