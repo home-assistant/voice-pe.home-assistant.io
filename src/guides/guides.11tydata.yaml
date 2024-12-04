@@ -116,3 +116,23 @@ procedureWakeWordChange:
           <li>Under <b>Device info</b>, select the three dots menu and select <b>Set up voice assistant</b> to start the wizard.</li>
           <li>Follow the steps in the wizard and change the wake word and the assistant as you like.</li>
         </ul>
+procedureAutomate:
+  title: Using the center button to trigger automations
+  steps:
+    - title: Create an automation for the button press
+      image: voice_long_press.png
+      content: |
+        <ul>
+          <li>To set up an automation based on a button press pattern (for example, long press), follow the steps on <a href="https://www.home-assistant.io/integrations/event/#automating-on-a-button-press" target="_blank">Automating on a button press</a>.
+            <ul>
+              <li><b>Info</b>: Those instructions are based on a Matter device. The process is the very similar for a Voice device.</li>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    - title: Check out the automation example in YAML.
+      image: voice_automation_yaml.png
+      content: |
+        <ul>
+          <li>For inspiration, check out the <a href="https://www.home-assistant.io/integrations/event/#automating-on-a-button-press" target="_blank">automation example in YAML</a>.</li>
+        </ul>

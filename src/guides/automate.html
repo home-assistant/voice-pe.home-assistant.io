@@ -1,0 +1,40 @@
+---
+layout: troubleshooting-guide
+description: Using the center button to trigger automations
+guideName: Using the center button to trigger automations
+---
+
+<div class="container">
+  <div><h1 class="text-center"></h1></div>
+  <div class="layout horizontal">         
+      <div class="layout vertical">
+        <p>The center button is mainly used to abort current tasks running on the device (a timer ringing, music playing), or to converse without saying the wake word. In addition, the device supports more complex button presses. You can use these to start automations. The following button presses are supported: 
+          <ul>
+            <li>Double press</li>
+            <li>Tripple press</li>
+            <li>Long press</li>
+          </ul>
+        </p>
+      </div>
+    </a>
+  </div>
+</div>
+
+{% render "proc.include.liquid", proc: procedureAutomate %}
+
+<div class="container">
+  
+  <div class="text">         
+    <h1>Related topics</h1>
+    <span>
+      <ul>
+        <li><a href="https://www.home-assistant.io/integrations/event/"
+        target="_blank">Event entities</a>
+        </li>
+        <li><a href="https://gist.github.com/jlpouffier/68434e51c8e347e974a791f90914c591"
+        target="_blank">VPE Button Press Automation Example</a>
+        </li>
+      </ul>
+    </span>
+  </div>
+</div>
