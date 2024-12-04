@@ -99,6 +99,23 @@ procedureActiveColor:
         <ul>
           <li>Under <b>Configuration</b>, select the ring icon and change the color.</li>
         </ul>
+procedureWakeWordChange:
+  title: Changing the wake word
+  steps:
+    - title: Open the ESPHome integration page
+      image: voice_esphome.png
+      content: |
+        <ul>
+          <li>Go to <a class="my" href="https://my.home-assistant.io/redirect/integration/" target="_blank"><b>Settings</b> > <b>Devices & services</b></a> and select the <b>ESPHome</b> integration.</li>
+          <li>From the list, under <b>Home Assistant Voice</b>, select <b>Device</b>.</li>
+        </ul>
+    - title: Follow the wizard
+      image: voice_change_config.png
+      content: |
+        <ul>
+          <li>Under <b>Device info</b>, select the three dots menu and select <b>Set up voice assistant</b> to start the wizard.</li>
+          <li>Follow the steps in the wizard and change the wake word and the assistant as you like.</li>
+        </ul>
 procedureAutomate:
   title: Using the center button to trigger automations
   steps:
@@ -119,4 +136,3 @@ procedureAutomate:
         <ul>
           <li>For inspiration, check out the <a href="https://www.home-assistant.io/integrations/event/#automating-on-a-button-press" target="_blank">automation example in YAML</a>.</li>
         </ul>
-
