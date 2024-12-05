@@ -10,6 +10,9 @@ system_description:
     url: /documentation/overview/
   - title: Status colors
     url: /documentation/status_colors/
+getting_started:
+  - title: Connecting to Wi-Fi via Bluetooth
+    url: /guides/onboarding_via_bluetooth/
 operation:
   - title: Changing the volume
     url: /guides/volume_change
@@ -39,6 +42,14 @@ troubleshooting:
   <h1>System description</h1>
   <div class="layout horizontal items">
     {% for guide in system_description %}
+    <a href="{{guide.url}}">
+      <div class="layout vertical center">{{guide.title}}</div>
+    </a>
+    {% endfor %}
+  </div>
+  <h1>Getting started</h1>
+  <div class="layout horizontal items">
+    {% for guide in getting_started %}
     <a href="{{guide.url}}">
       <div class="layout vertical center">{{guide.title}}</div>
     </a>
