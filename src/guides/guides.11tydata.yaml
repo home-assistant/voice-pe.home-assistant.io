@@ -200,7 +200,7 @@ procedureOnboardingBluetooth:
           </li>
         </ul>
     - title: Start talking to Home Assistant
-      image: 
+      image: speak.png
       content: |
         <ul>
           <li>Start controlling Home Assistant by saying a <a class="my" href="https://www.home-assistant.io/voice_control/builtin_sentences/" target="_blank">supported voice command</a></b>: 
