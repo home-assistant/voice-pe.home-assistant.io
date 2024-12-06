@@ -61,7 +61,7 @@ procedureStop:
   title: Stopping the current process
   steps:
     - title: Option 1 - Press the center button
-      image: voice_press_center_button.png
+      image: voice_authorize.png
       content: |
         <ul>
           <li>To stop whatever the device is doing, press the center button.
