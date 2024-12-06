@@ -2,6 +2,9 @@
 layout: troubleshooting-guide
 description: Using the center button to trigger automations
 guideName: Using the center button to trigger automations
+videos:
+- url: "https://www.youtube.com/embed/4QszFcwWYNY"
+  title: "Home Assistant Voice Preview Edition: Voice button press automations"
 ---
 
 <div class="container">
@@ -18,6 +21,21 @@ guideName: Using the center button to trigger automations
       </div>
     </a>
   </div>
+</div>
+<div class="videos">
+  {% for video in videos %}
+  <div class="video">
+    <iframe
+      width="650"
+      height="365"
+      src="{{ video.url}}"
+      title="{{ video.title}}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  {% endfor %}
 </div>
 
 {% render "proc.include.liquid", proc: procedureAutomate %}
