@@ -20,7 +20,7 @@ procedureVolumeControl:
   title: Changing the volume of the device
   steps:
     - title: Move the dial
-      image: voice_change_volume.png
+      image: voice_change_volume.webp
       content: |
         <ul>
           <li>To change the volume, move the dial.</li>
@@ -34,7 +34,7 @@ procedureMute:
   title: Muting the device
   steps:
     - title: Option 1 - Use the hardware mute switch
-      image: voice_hardware_mute.png
+      image: voice_mute_device.webp
       content: |
         <ul>
           <li>To use the hardware mute function, on the device, move the switch so that you see the red color.</li>
@@ -86,7 +86,7 @@ procedureActiveColor:
   title: Changing the active color
   steps:
     - title: Option 1 - Change the active color on the device
-      image: voice_press_center_button.png
+      image: voice_change_active_color.webp
       content: |
         <ul>
           <li>Press and hold the button and turn the dial until you see the color you like.</li>
