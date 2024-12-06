@@ -106,7 +106,7 @@ procedureWakeWordChange:
       image: voice_esphome.png
       content: |
         <ul>
-          <li>Go to <a class="my" href="https://my.home-assistant.io/redirect/integration/" target="_blank"><b>Settings</b> > <b>Devices & services</b></a> and select the <b>ESPHome</b> integration.</li>
+          <li>Go to <a class="my" href="https://my.home-assistant.io/redirect/integrations/" target="_blank"><b>Settings</b> > <b>Devices & services</b></a> and select the <b>ESPHome</b> integration.</li>
           <li>From the list, under <b>Home Assistant Voice</b>, select <b>Device</b>.</li>
         </ul>
     - title: Follow the wizard
@@ -135,4 +135,92 @@ procedureAutomate:
       content: |
         <ul>
           <li>For inspiration, check out the <a href="https://www.home-assistant.io/integrations/event/#automating-on-a-button-press" target="_blank">automation example in YAML</a>.</li>
+        </ul>
+procedureOnboardingBluetooth:
+  title: To connect the device to your Wi-Fi via Bluetooth
+  steps:
+    - title: Connect the device to a power source
+      image: status_white_twinkle.webp
+      content: |
+        <ul>
+          <li>Use the USB-C cable to connect the device to a power source.
+            <ul>
+              <li><b>Info</b>: You should see a warm white twinkle animation.</li>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    - title: Add the integration
+      image: voice_ble_improv_discovered.png
+      content: |
+        <ol>
+          <li>Go to <a class="my" href="https://my.home-assistant.io/redirect/integrations/" target="_blank"><b>Settings</b> > <b>Devices & services</b></a> and under <b>Discovered</b>, you should see the device as "home-assistant-xx Improv via BLE".</li>
+          <li>Select <b>Add</b>, then <b>Submit</b>.</li>
+        </ol>
+    - title: Enter your Wi-Fi credentials
+      image: voice_enter_wi-fi_creds.png
+      content: |
+        <ul>
+          <li>In the SSID field, enter the name of your Wi-Fi.</li>
+        </ul>
+    - title: Authorize the connection
+      image: voice_authorize.png
+      content: |
+        <ol>
+          <li>When prompted, press the center button on Home Assistant Voice.</li>
+          <li>
+            <ul>
+              <li><b>Info</b>: This is to confirm that it is you who is trying to connect the device.</li>
+              <li><b>Troubleshooting</b>: If you now see a message “Failed to connect”, continue with the Troubleshooting steps.</li>
+            </ul>
+          </li>
+          <li>Success! Your device is now connected to your Wi-Fi. <b>Close</b>.</li>
+        </ol>
+    - title: Complete device discovery
+      image: voice_add_integration_01.png
+      content: |
+        <ol>
+          <li>Under <b>Discovered</b>, on the <b>Home Assistant Voice XXX</b> card, select <b>Add</b>.</li>
+          <li><b>Discovered ESPHome node</b>: select <b>Submit</b>.</li>
+        </ol>
+    - title: Follow the wizard steps
+      image: voice_choose_hw_for_processing.png
+      content: |
+        <ol>
+          <li>The wizard starts checking for updates. 
+            <ul>
+            <li>Follow the instructions on screen.</li>
+            </ul>
+          </li>
+          <li>If you are connected to Home Assistant Cloud, the Cloud Assistant will be used.</li>
+          <li>If you are not connected to Home Assistant Cloud, you will see a step <b>What Hardware do you want to use?</b>: 
+            <ul>
+              <li>Option 1: If you choose <b>Home Assistant Cloud</b>: 
+                <ul>
+                  <li>Select <b>Learn more</b>, then <b>Try 1 month for free</b></li>
+                  <li>If you already have an account, select <b>Log in</b> and enter your login credentials. If not, enter email and password, select <b>Next</b> and follow the wizard.</li>
+                  <li>For more information, refer to <a class="my" href="https://www.home-assistant.io/voice_control/voice_remote_cloud_assistant/" target="_blank">Enabling Home Assistant Cloud</a>.</li>
+                </ul>
+              </li>
+              <li>Option 2: If you choose <b>Do it yourself</b>:
+                <ul>
+                  <li><b>Info</b>: If you have lower-power hardware, this option is not recommended. Weaker Home Assistant hardware can lead to slow speech processing.</li>
+                  <li>Select <b>Setup with add-ons</b></li>
+                  <li><b>Result</b>: The required add-ons are being installed: <b>Whisper</b>, <b>Piper</b>.</li>
+                  <li>On the integrations page, under <b>Discovered</b>, <b>Add</b> the <b>Whisper</b> and <b>Piper</b> integrations.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+    - title: Start talking to Home Assistant
+      image: speak.png
+      content: |
+        <ul>
+          <li>Start controlling Home Assistant by saying a <a class="my" href="https://www.home-assistant.io/voice_control/builtin_sentences/" target="_blank">supported voice command</a></b>: 
+            <ul>
+              <li>For example, “What's the time” “Turn on the light in the living room”, “Set the timer to 5 minutes”, “Is the front door locked”.</li>
+              <li>Make sure you’re using the area name exactly as you defined it in Home Assistant.</li>
+            </ul>
+          </li>
         </ul>
