@@ -1,6 +1,9 @@
 ---
 layout: guide
 guideName: Conversing without wake word
+videos:
+- url: "https://www.youtube.com/embed/e1f-lBJRgyo"
+  title: "Home Assistant Voice Preview Edition: Voice converse without wake word"
 ---
 
 <div class="container">
@@ -8,4 +11,20 @@ guideName: Conversing without wake word
       <span><h2>Conversing without using a wake word</h2></span>
       <span><p>To activate Assist, you can also just press the center button. Assist will then start listening.</p></span>
     </p>
+</div>
+
+<div class="videos">
+  {% for video in videos %}
+  <div class="video">
+    <iframe
+      width="650"
+      height="365"
+      src="{{ video.url}}"
+      title="{{ video.title}}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  {% endfor %}
 </div>
