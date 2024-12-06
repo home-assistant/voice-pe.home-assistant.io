@@ -120,7 +120,7 @@ procedureAutomate:
   title: Using the center button to trigger automations
   steps:
     - title: Create an automation for the button press
-      image: voice_button_press_352.webp
+      image: voice_button_automations.png
       content: |
         <ul>
           <li>To set up an automation based on a button press pattern (for example, long press), follow the steps on <a href="https://www.home-assistant.io/integrations/event/#automating-on-a-button-press" target="_blank">Automating on a button press</a>.
