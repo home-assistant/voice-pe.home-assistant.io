@@ -37,7 +37,7 @@ procedureMute:
       image: voice_mute_device.webp
       content: |
         <ul>
-          <li>To use the hardware mute function, on the device, move the switch so that you see the red color.</li>
+          <li>On the device, move the switch so that you see the red color.</li>
           <li><b>Result</b>:  The light turns red, indicating that the microphone is muted.</li>
           <li><b>Info</b>:  When the switch is in this position, you cannot unmute the device from the UI.</li>
         </ul>
@@ -45,7 +45,7 @@ procedureMute:
       image: voice_mute.png
       content: |
         <ul>
-          <li>To use the mute function in the UI, under <b>Configuration</b>, toggle the Mute Switch.</li>
+          <li>To use the mute function in the UI, under <b>Configuration</b>, toggle the <b>Mute</b> switch.</li>
           <li><b>Info</b>:  The switch in the UI does not work when the physical switch is in the muted position..</li>
         </ul>
 procedureWakeSoundToggle:
