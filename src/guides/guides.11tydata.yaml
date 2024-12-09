@@ -88,11 +88,14 @@ procedureActiveColor:
     - title: Option 1 - Change the active color on the device
       image: voice_change_active_color.webp
       content: |
-        <ul>
+        <ol>
           <li>Press and hold the button and turn the dial until you see the color you like.</li>
-          <li>When you see the color you like, let go of the button.</li>
-          <li><b>Result</b>: The device changes the active color.</li>
-        </ul>
+          <li>When you see the color you like, let go of the button.
+            <ul>
+              <li><b>Result</b>: The device changes the active color.</li>
+            </ul>
+          </li>
+        </ol>
     - title: Option 2 - Change the active color from the UI
       image: voice_change_ring_color_02.png
       content: |
@@ -105,17 +108,17 @@ procedureWakeWordChange:
     - title: Open the ESPHome integration page
       image: voice_esphome.png
       content: |
-        <ul>
+        <ol>
           <li>Go to <a class="my" href="https://my.home-assistant.io/redirect/integrations/" target="_blank"><b>Settings</b> > <b>Devices & services</b></a> and select the <b>ESPHome</b> integration.</li>
           <li>From the list, under <b>Home Assistant Voice</b>, select <b>Device</b>.</li>
-        </ul>
+        </ol>
     - title: Follow the wizard
       image: voice_change_config.png
       content: |
-        <ul>
+        <ol>
           <li>Under <b>Device info</b>, select the three dots menu and select <b>Set up voice assistant</b> to start the wizard.</li>
           <li>Follow the steps in the wizard and change the wake word and the assistant as you like.</li>
-        </ul>
+        </ol>
 procedureAutomate:
   title: Using the center button to trigger automations
   steps:
@@ -134,5 +137,5 @@ procedureAutomate:
       image: voice_automation_yaml.png
       content: |
         <ul>
-          <li>For inspiration, check out the <a href="https://www.home-assistant.io/integrations/event/#automating-on-a-button-press" target="_blank">automation example in YAML</a>.</li>
+          <li>For inspiration, check out the <a href="https://gist.github.com/jlpouffier/68434e51c8e347e974a791f90914c591" target="_blank">automation example in YAML</a>.</li>
         </ul>
