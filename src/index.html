@@ -28,7 +28,7 @@ tools:
     </div>
     <div>
       <h3>Onboarding via Bluetooth</h3>
-      <p>If you don't wan't to use a phone and your Home Assistant has either onboard Bluetooth, or if you have an ESPHome device set up as a <a href="https://esphome.io/projects/?type=bluetooth"
+      <p>If you don't wan't to use a phone and your Home Assistant has Bluetooth: either onboard Bluetooth, or an ESPHome device set up as a <a href="https://esphome.io/projects/?type=bluetooth"
         target="_blank">Bluetooth proxy</a> and connected to Home Assistant.</p>
     </div>
 
@@ -64,7 +64,7 @@ procedureOnboarding:
       image: voice_enter_wi-fi_creds.png
       content: |
         <ul>
-          <li>In the SSID field, enter the name of your Wi-Fi.</li>
+          <li>In the <abbr title="Service set identifier = Wi-Fi network name">SSID</abbr> field, enter the name of your Wi-Fi.</li>
         </ul>
     - title: Authorize the connection
       image: voice_authorize.png
@@ -74,7 +74,7 @@ procedureOnboarding:
           <li>
             <ul>
               <li><b>Info</b>: This is to confirm that it is you who is trying to connect the device.</li>
-              <li><b>Troubleshooting</b>: If you now see a message “Failed to connect”, continue with the Troubleshooting steps.</li>
+              <li><b>Troubleshooting</b>: If you now see a message “Failed to connect”, continue with the <a class="my" href="/faq/#can-t-connect-to-wi-fi-during-onboarding" target="_blank">Troubleshooting steps</a>.</li>
             </ul>
           </li>
           <li>Success! Your device is now connected to your Wi-Fi. <b>Close</b>.</li>
@@ -100,8 +100,8 @@ procedureOnboarding:
             <ul>
               <li>Option 1: If you choose <b>Home Assistant Cloud</b>: 
                 <ul>
-                  <li>Select <b>Learn more</b>, then <b>Try 1 month for free</b></li>
-                  <li>If you already have an account, select <b>Log in</b> and enter your login credentials. If not, enter email and password, select <b>Next</b> and follow the wizard.</li>
+                  <li>If you already have Home Assistant Cloud account, select <b>Log in</b> and enter your login credentials. If not, enter email and password, select <b>Next</b> and follow the wizard.</li>
+                  <li>If you do not have an account yet, select <b>Learn more</b>, then <b>Try 1 month for free</b>.</li>
                   <li>For more information, refer to <a class="my" href="https://www.home-assistant.io/voice_control/voice_remote_cloud_assistant/" target="_blank">Enabling Home Assistant Cloud</a>.</li>
                 </ul>
               </li>
@@ -132,4 +132,17 @@ procedureOnboarding:
 {% render "tools.include.liquid", tools: tools %}
 {% render "proc.include.liquid", proc: procedureOnboarding %}
 
+<div class="container">  
+  <div class="text">         
+    <h1>Related topics</h1>
+    <span>
+      <ul>
+        <li><a class="my" href="https://www.home-assistant.io/voice_control/builtin_sentences/" target="_blank">Supported voice commands</a>
+        </li>
+        <li><a class="my" href="https://www.home-assistant.io/voice_control/voice_remote_cloud_assistant/" target="_blank">Enabling Home Assistant Cloud</a>
+        </li>
+      </ul>
+    </span>
+  </div>
+</div>
 
