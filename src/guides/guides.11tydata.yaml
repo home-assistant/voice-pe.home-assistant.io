@@ -15,6 +15,7 @@ procedureFactoryReset:
           <li>Keep pressing the button until the red light is turned off.</li>
           <li><b>Result</b>: Once the light turns off, the reset is complete. All data is cleared from the device.</li>
           <li><b>Info</b>: If you stop pressing the button before the red light has completed the circle, the reset proess is aborted.</li>
+          <li><b>Info</b>: After the reset is complete, the device should start up again and show a white twinkle, indicating that it is ready to be connected. If the device does not seem to be starting back up, power-cycle it.</li>
         </ul>
 procedureVolumeControl:
   title: Changing the volume of the device
