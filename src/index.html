@@ -1,148 +1,58 @@
 ---
-layout: getting-started
-description: Connecting the device to your Wi-Fi using a phone or via Bluetooth
-guideName: Connecting the device to your Wi-Fi
-videos:
-  - url: "https://youtube.com/embed/u8sk6B8_Qkc?start=33"
-tools:
-  title: Prerequisites
-  image: voice_prereqs_01.png
-  content: |
-    <ul>
-        <li>Home Assistant Voice Preview Edition</li>
-        <li>USB-C cable and USB power supply (these are not included in the box)</li>
-        <li>Home Assistant installation
-          <ul>
-        <li>If you do not have Home Assistant installed yet, refer to the installation page for instructions.</li></ul></li>
-        <li>The password to your Wi-Fi network</li>        
-    </ul>
-    <div>
-      <h3>Onboarding via phone</h3>
-      <p>Using your iPhone/Android is the easiest way to connect your Home Assistant Voice to your Wi-Fi network.
-      </p>
-      <ul>        
-        <li>Have the <a href="https://companion.home-assistant.io/"
-          target="_blank">Home Assistant companion app</a> installed on your iPhone or Android and configured to connect to your Home Assistant instance. Make sure the version is up to date.</li>
-        <li>For Android: make sure you’ve enabled precise location service permissions for Home Assistant. It is used for onboarding only. You can disable it again afterward.</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Onboarding via Bluetooth</h3>
-      <p>If you don't wan't to use a phone and your Home Assistant has Bluetooth: either onboard Bluetooth, or an ESPHome device set up as a <a href="https://esphome.io/projects/?type=bluetooth"
-        target="_blank">Bluetooth proxy</a> and connected to Home Assistant.</p>
-    </div>
-
-procedureOnboarding:
-  title: To connect the device to your Wi-Fi and Home Assistant
-  steps:
-    - title: Connect the device to a power source
-      image: status_white_twinkle.webp
-      content: |
-        <ul>
-          <li>Use the USB-C cable to connect the device to a power source.
-            <ul>
-              <li><b>Info</b>: You should see a warm white twinkle animation.</li>
-              </li>
-            </ul>
-          </li>
-        </ul>
-    - title: Open the Home Assistant UI
-      image: ha_companion_app.png
-      content: |
-        <ol>
-          <li>If you're using your phone, open the Home Assistant Companion App.</li>
-          <li>If your Home Assistant has Bluetooth, open Home Assistant in a browser.</li>
-        </ol>
-    - title: Add the integration
-      image: voice_ble_improv_discovered.png
-      content: |
-        <ol>
-          <li>Go to <a class="my" href="https://my.home-assistant.io/redirect/integrations/" target="_blank"><b>Settings</b> > <b>Devices & services</b></a> and under <b>Discovered</b>, you should see the device as "home-assistant-xx Improv via BLE".</li>
-          <li>Select <b>Add</b>, then <b>Submit</b>.</li>
-        </ol>
-    - title: Enter your Wi-Fi credentials
-      image: voice_enter_wi-fi_creds.png
-      content: |
-        <ul>
-          <li>In the <abbr title="Service set identifier = Wi-Fi network name">SSID</abbr> field, enter the name of your Wi-Fi.</li>
-        </ul>
-    - title: Authorize the connection
-      image: voice_authorize.png
-      content: |
-        <ol>
-          <li>When prompted, press the center button on Home Assistant Voice.</li>
-          <li>
-            <ul>
-              <li><b>Info</b>: This is to confirm that it is you who is trying to connect the device.</li>
-              <li><b>Troubleshooting</b>: If you now see a message “Failed to connect”, continue with the <a class="my" href="/faq/#can-t-connect-to-wi-fi-during-onboarding" target="_blank">Troubleshooting steps</a>.</li>
-            </ul>
-          </li>
-          <li>Success! Your device is now connected to your Wi-Fi. <b>Close</b>.</li>
-        </ol>
-    - title: Complete device discovery
-      image: voice_add_integration_01.png
-      content: |
-        <ol>
-          <li>Under <b>Discovered</b>, add the <b>Home Assistant Voice XXX</b>.</li>
-          <li><b>Discovered ESPHome node</b>: select <b>Submit</b>.</li>
-        </ol>
-    - title: Follow the wizard steps
-      image: voice_choose_hw_for_processing.png
-      content: |
-        <ol>
-          <li>The wizard starts checking for updates. 
-            <ul>
-            <li>Follow the instructions on screen.</li>
-            </ul>
-          </li>
-          <li>If you are connected to Home Assistant Cloud, the Cloud Assistant is used. Your job is done here.</li>
-          <li>If you are not connected to Home Assistant Cloud, you will see a step <b>What Hardware do you want to use?</b>: 
-            <ul>
-              <li>Option 1: If you choose <b>Home Assistant Cloud</b>: 
-                <ul>
-                  <li>If you already have Home Assistant Cloud account, select <b>Log in</b> and enter your login credentials. If not, enter email and password, select <b>Next</b> and follow the wizard.</li>
-                  <li>If you do not have an account yet, select <b>Learn more</b>, then <b>Try 1 month for free</b>.</li>
-                  <li>For more information, refer to the guide on <a class="my" href="https://www.home-assistant.io/voice_control/voice_remote_cloud_assistant/" target="_blank">Getting started with Home Assistant Cloud</a>.</li>
-                </ul>
-              </li>
-              <li>Option 2: If you choose <b>Do it yourself</b>:
-                <ul>
-                  <li><b>Info</b>: If you have lower-power hardware, this option is not recommended. Weaker Home Assistant hardware can lead to slow speech processing.</li>
-                  <li>Select <b>Setup with add-ons</b></li>
-                  <li><b>Result</b>: The required add-ons are being installed: <b>Whisper</b>, <b>Piper</b>.</li>
-                  <li>On the integrations page, under <b>Discovered</b>, <b>Add</b> the <b>Whisper</b> and <b>Piper</b> integrations.</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ol>
-    - title: Start talking to Home Assistant
-      image: speak.png
-      content: |
-        <ul>
-          <li>Start controlling Home Assistant by saying a <a class="my" href="https://www.home-assistant.io/voice_control/builtin_sentences/" target="_blank">supported voice command</a></b>: 
-            <ul>
-              <li>For example, “What's the time” “Turn on the light in the living room”, “Set the timer to 5 minutes”, “Is the front door locked”.</li>
-              <li>Make sure you’re using the area name exactly as you defined it in Home Assistant.</li>
-            </ul>
-          </li>
-        </ul>
+layout: base
+title: Getting Started
+description: Getting started
 ---
 
-{% render "tools.include.liquid", tools: tools %}
-{% render "proc.include.liquid", proc: procedureOnboarding %}
+<div class="container">
+<div><h1 class="text-left">About the product</h1></div>
+<div class="card landing-page-top-box"> 
+    <div class="content">
+      <span>
+        <p>The best way to experience voice in Home Assistant</p>
+        <p>To learn more about the product, check out our product tour.</p>
+      </span>
+        <div class="buttons">
+          <a
+          class="landing-page-button"
+          href="https://www.home-assistant.io/voice-pe"
+          >
+          Learn more
+          </a>
+          <a
+          class="landing-page-button"
+          target="_blank"
+          href="https://www.home-assistant.io/voice-pe"
+          >
+          Buy
+          </a>
+        </div>
+    </div>
 
-<div class="container">  
-  <div class="text">         
-    <h1>Related topics</h1>
-    <span>
-      <ul>
-        <li><a class="my" href="https://www.home-assistant.io/voice_control/builtin_sentences/" target="_blank">Supported voice commands</a>
-        </li>
-        <li><a class="my" href="https://www.home-assistant.io/voice_control/voice_remote_cloud_assistant/" target="_blank">Enabling Home Assistant Cloud</a>
-        </li>
-      </ul>
-    </span>
+  </div>
+  
+</div>
+<div class="container">
+<div><h1 class="text-left">User documentation</h1></div>
+    <div class=" layout horizontal justified items">
+      <a href="/getting-started/">
+        <div class="layout vertical center">
+          <img src="/images/icons/rocket.png" />
+          <h3>Getting started</h3>
+        </div>
+      </a>
+      <a href="/documentation/">
+        <div class="layout vertical center">
+          <img src="/images/icons/documentation.png" />
+          <h3>Documentation</h3>
+        </div>
+      </a>
+      <a href="/faq/">
+        <div class="layout vertical center">
+          <img src="/images/icons/questionmark.png" />
+          <h3>FAQ</h3>
+        </div>
+      </a>
   </div>
 </div>
 
