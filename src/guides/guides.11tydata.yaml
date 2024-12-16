@@ -47,7 +47,13 @@ procedureMute:
       content: |
         <ul>
           <li>To use the mute function in the UI, under <b>Configuration</b>, toggle the <b>Mute</b> switch.</li>
-          <li><b>Info</b>:  The switch in the UI does not work when the physical switch is in the muted position..</li>
+          <li><b>Info</b>:  The switch in the UI does not work when the physical switch is in the muted position.</li>
+        </ul>
+    - title: Red LED indicates the mute status
+      image: status_muted.png
+      content: |
+        <ul>
+          <li>If you muted the device, the LEDs closest to the speaker turn red to indicate that the microphones are off.</li>
         </ul>
 procedureWakeSoundToggle:
   title: Turning the wake sound on or off
