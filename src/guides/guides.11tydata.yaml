@@ -146,3 +146,90 @@ procedureAutomate:
         <ul>
           <li>For inspiration, check out the <a href="https://gist.github.com/jlpouffier/68434e51c8e347e974a791f90914c591" target="_blank">automation example in YAML</a>.</li>
         </ul>
+procedureScripts:
+  title: Using scripts and automations to control the device
+  steps:
+    - title: Play announcements on the device
+      image: voice_script_announcement.png
+      content: |
+        <ol>
+          <li>You can create an automation or script to play an announcement on the device. 
+            <ul>
+              <li>Go to <a class="my" href="https://my.home-assistant.io/redirect/automations/" target="_blank"><b>Settings</b> > <b>Automations & scripts</b></a> and create a new automation.</li>
+              <li>Define your trigger.</li>                     
+              <li>Under <b>Then do</b>, select <b>Add action</b> and from the menu, select <b>Assist satellite</b>.</li>
+              <li>Select <b>Announce</b></li>
+              <li>Enter the message you want to play and select the device you want to play it on.</li>
+              <li>Save the automation.</li>
+            </ul>
+          </li>
+          <li>If you prefer editing in YAML, you can find an example with the <code>assist_satellite.announce action</code> below.           
+              <code><pre>
+                action: assist_satellite.announce
+                  data:
+                    message: The laundry is done
+                  target:
+                    entity_id: assist_satellite.home_assistant_voice_012345</pre>
+              </code>
+          </li>
+        </ol>
+    - title: Control the color of the LED ring
+      image: voice_light_turn_on_script.png
+      content: |
+        <ul>
+          <li>You can use <code>light.turn_on</code> and <code>light.turn_off</code> actions to control the light. You can turn it on or off when something happens and define color and effects.           
+              <code>
+                <pre>
+                  action: light.turn_on
+                    data:
+                      rgb_color:
+                        - 255
+                        - 105
+                        - 180
+                    target:
+                      entity_id: light.home_assistant_voice_012345_led_ring
+                  action: light.turn_off
+                  target:
+                    entity_id: light.home_assistant_voice_012345_led_ring
+                </pre>
+              </code>
+          </li>
+        </ul>
+    - title: Change the selected assistant
+      image: voice_select_assistant_spanish.png
+      content: |
+        <ol>
+          <li>To select a different assistant when something happens, use the <code>select.select_option</code> actions. For example, when a button is pressed.           
+              <code>
+                <pre>
+                  action: select.select_option
+                    data:
+                      option: preferred
+                    target:
+                      entity_id: select.home_assistant_voice_012345_assist_pipeline
+                </pre>
+              </code>
+          </li>
+          <li>Under <b>Options</b>, enter the name of the voice assistant. Make sure to spell it exactly as you named it. For example <code>Spanish</code>.</li>
+          <li>To learn how to set up an automation based on a button press, follow the steps on <a href="https://www.home-assistant.io/integrations/event/#automating-on-a-button-press" target="_blank">Automating on a button press</a>.
+            <ul>
+              <li><b>Info</b>: Those instructions are based on a Matter device. The process is very similar for other devices featuring a button.</li>
+        </ol>
+    - title: Change the wake word
+      image: voice_select_wake_word_mycroft.png
+      content: |
+        <ul>
+          <li>You can use <code>select.select_option</code> actions to select a different wake word when something happens.           
+              <code>
+                <pre>
+                  action: select.select_option
+                    data:
+                      option: Okay Nabu
+                    target:
+                      entity_id: select.home_assistant_voice_012345_wake_word
+                </pre>
+              </code>
+          </li>
+          <li>Under <b>Options</b>, enter the preferred wake word. The default options are , <code>Hey Jarvis</code>, <code>Hey Mycroft</code>, and <code>Okay Nabu</code>.</li>
+          <li>Make sure to spell it exactly as you named it.</li>
+        </ul>
