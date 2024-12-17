@@ -363,3 +363,67 @@ procedureGrovePortExampleConigurations:
               </code>
           </li>
         </ul>
+procedureDisassemble:
+  title: Disassembling the device enclosure
+  steps:
+    - title: Remove the rubber pads and screws
+      image: 01_remove_pads_small.png
+      content: |
+        <ol>
+          <li>Grab the flathead screwdriver and remove the 4 rubber pads.</li>
+          <li>Grab the crosshead screwdriver and unscrew the 4 rear screws.</li>
+        </ol>
+    - title: Remove the top enclosure
+      image: 02_remove_top_enclosure_small.png
+      content: |
+        <ol>
+          <li>Remove the top enclosure.</li>
+          <li>If you only want to replace the top cover, your disassembly is done here. Continue with the assembly steps.</li>
+        </ol>
+    - title: Remove the the PCB screws
+      image: 03_remove_pcb_screws_small.png
+      content: |
+        <ul>
+          <li>Unscrew the 4 screws that hold the PCB.</li>
+        </ul>
+    - title: Remove the mic switch
+      image: 04_remove_mic_switch_small.png
+      content: |
+        <ul>
+          <li>Carefully pull on the mic switch and remove it.</li>
+        </ul>
+    - title: Remove the speaker
+      image: 05_remove_speaker_small.png
+      content: |
+        <ol>
+          <li>Unscrew the 2 screws that hold the speaker.</li>
+          <li>Store them separately; they are smaller than the ones for the PCB.</li>
+          <li>If you only want to replace the top enclosure and the bottom enclosure, your disassembly is done here. Continue with the assembly steps.</li>
+        </ol>
+    - title: Remove the LED diffuser
+      image: 06_remove_led_diffuser_small.png
+      content: |
+        <ul>
+          <li>Use the flat screwdriver and remove the LED diffuser.</li>
+        </ul>
+    - title: Remove the dial and the center button
+      image: 07_unclip_wheel_small.png
+      content: |
+        <ol>
+          <li>To remove the dial and the center button, locate the slot on the rear of the PCB.</li>
+          <li>Gently push the tip of the flat screwdriver through the slot.</li>
+          <li>Proceed careefully and don't apply too much force. The rotation mechanism must stay in place.</li>
+        </ol>
+    - title: Remove the rubber o-ring
+      image: 08_remove_rubber_lug_small.png
+      content: |
+        <ul>
+          <li>Use the flat screwdriver and remove the rubber o-ring.</li>
+        </ul>
+    - title: All done!
+      image: 07_bis_fully_disassembled_small.png
+      content: |
+        <ol>
+          <li>Congratulations! You've disassembled the device enclosure.</li>
+          <li>You can now put it back together using your own awesome 3D printed parts.</li>
+        </ol>
