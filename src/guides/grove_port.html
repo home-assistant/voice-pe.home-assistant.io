@@ -1,0 +1,74 @@
+---
+layout: guide
+description: Steps on connecting a sensor to the grove port
+guideName: Connecting a sensor to the grove port
+tools:
+  title: Prerequisites
+  image: voice_grove_port_detail.png
+  content: |
+    <ul>
+        <li>Home Assistant Voice Preview Edition set up and running in Home Assistant</li>
+        <li>Opened the grove port</li>
+        <li>Have one ore more external sensors, such as:          
+          <ul>
+            <li><a href="https://shop.m5stack.com/products/env-iv-unit-with-temperature-humidity-air-pressure-sensor-sht40-bmp280"
+            target="_blank">M5Stack SHT40-BMP280</a> temperature, humidity, air pressure sensor
+            </li>
+            <li><a href="https://shop.m5stack.com/products/pir-module"
+            target="_blank">M5Stack PIR</a> motion sensor
+            </li>
+            <li><a href="https://shop.m5stack.com/products/tvoc-eco2-gas-unit-sgp30"
+            target="_blank">M5Stack SGP30</a> TVOC, eCO2 gas sensor
+            </li>
+            <li><a href="https://shop.m5stack.com/products/dlight-unit-ambient-light-sensor-bh1750fvi-tr"
+            target="_blank">M5Stack BH1750</a> ambient light sensor
+            </li>
+          </ul>
+        </li>
+        <li>If you are adding more than one sensor, you need an expansion unit like this <a href="https://shop.m5stack.com/products/mini-hub-module?srsltid=AfmBOooKdCNWJPf90Wr25-jC_8QqbrVeqc3gzZ678-yi4396Cc1q792_"
+          target="_blank">grove hub</a></li>
+    </ul>
+---
+
+<div class="container">
+  <div><h1 class="text-center"></h1></div>
+  <div class="layout horizontal">         
+      <div class="layout vertical">
+        <p>Connecting a sensor to the grove port of the device allows the sensor to use the device's power supply and Wi-Fi connection. Home Assistant can then detect the sensor and start using it. This page explains how to connect a sensor to the grove port and provides configuration details for a few selected sensors.</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="alert alert-note">
+    <p class="alert-title">Notice</p>
+    <p class="alert-content">Connecting devices to the grove port and reassembling your own firmware can void the warranty.</p>
+  </div>
+</div>
+
+{% render "tools.include.liquid", tools: tools %}
+{% render "proc.include.liquid", proc: procedureConnectGrovePort %}
+{% render "example.include.liquid", proc: procedureGrovePortExampleConigurations %}
+
+<div class="container">
+  <div class="text">
+    <h1>Related topics</h1>
+    <span>
+      <ul>
+        <li><a href="https://shop.m5stack.com/products/env-iv-unit-with-temperature-humidity-air-pressure-sensor-sht40-bmp280"
+        target="_blank">M5Stack SHT40-BMP280 temperature, humidity, air pressure sensor</a>
+        </li>
+        <li><a href="https://shop.m5stack.com/products/pir-module"
+        target="_blank">M5Stack PIR motion sensor</a>
+        </li>
+        <li><a href="https://shop.m5stack.com/products/tvoc-eco2-gas-unit-sgp30"
+        target="_blank">M5Stack SGP30 TVOC, eCO2 gas sensor</a>
+        </li>
+        <li><a href="https://shop.m5stack.com/products/dlight-unit-ambient-light-sensor-bh1750fvi-tr"
+        target="_blank">M5Stack BH1750 ambient light sensor</a>
+        </li>
+      </ul>
+    </span>
+  </div>
+</div>

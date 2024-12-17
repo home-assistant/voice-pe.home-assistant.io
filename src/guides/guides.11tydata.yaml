@@ -233,3 +233,133 @@ procedureScripts:
           <li>Under <b>Options</b>, enter the preferred wake word. The default options are , <code>Hey Jarvis</code>, <code>Hey Mycroft</code>, and <code>Okay Nabu</code>.</li>
           <li>Make sure to spell it exactly as you named it.</li>
         </ul>
+procedureConnectGrovePort:
+  title: Connecting a sensor to the grove port
+  steps:
+    - title: Take control of the device in the ESPHome add-on
+      image: voice_esphome_take_control.png
+      content: |
+        <ol>
+          <li>Go to <a class="my" href="https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome" target="_blank"><b>Settings</b> > <b>Add-ons</b></a> and install the <b>ESPHome</b> add-on.</li>
+          <li>Start the add-on and select <b>Open web UI</b>.</li>
+          <li>On the Home Assistant Voice card, select <b>Take control</b>, and follow the steps of the installer.</li>
+        </ol>
+    - title: Install a new device configuration
+      image: voice_esphome_device_config.png
+      content: |
+        <ol>
+          <li>To open the device configuration file, on the Home Assistant Voice card, select <b>Edit</b>.</li>
+          <li>In the configuration file, under <code>packages</code>, add the configuration for the sensor.
+          <ul>
+          <li>In this example, we are adding the configuration for the <a href="https://shop.m5stack.com/products/env-iv-unit-with-temperature-humidity-air-pressure-sensor-sht40-bmp280"
+          target="_blank">M5Stack SHT40-BMP280 temperature, humidity, air pressure sensor</a>.
+          
+                      
+          <code>
+            <pre>
+              packages:
+                grove-i2c: github://esphome/home-assistant-voice-pe/modules/grove-i2c.yaml
+              sensor:
+                - platform: sht4x
+                  i2c_id: grove_i2c
+                  temperature:
+                    name: Temperature
+                  humidity:
+                    name: Humidity
+
+                - platform: bmp280_i2c
+                  i2c_id: grove_i2c
+                  address: 0x76
+                  pressure:
+                    name: Pressure
+            </pre>
+          </code>
+          </li>
+          <li>For other sensors, refer to the section on <a class="my" href="/guides/grove_port/#configuration-data-for-selected-sensors" target="_blank">Configuration data for selected sensors</a>.</li></ul></li>
+          <li>Now, you need to recompile the firmware with the new configuration settings. To start the process, select <b>Install</b>.</li>
+          <li>Wait for the compilation to complete. Depending on your hardware, this may take a while.</li>
+        </ol>
+    - title: Connect the sensor to the grove port
+      image: voice_grove_port_sensor_connected_small.jpg
+      content: |
+        <ol>
+          <li>Disconnect the device from power.</li>
+          <li>Connect the sensor to the grove port. 
+            <ul>
+              <li>Mind the color coding. Make sure the black cable is connected to the ground (GND) pin.</li>
+            </ul>
+          </li>
+          <li>Reconnect the device to the power supply.</li>
+        </ol>
+    - title: Open the ESPHome integration page
+      image: voice_esphome.png
+      content: |
+        <ol>
+          <li>Go to <a class="my" href="https://my.home-assistant.io/redirect/integrations/" target="_blank"><b>Settings</b> > <b>Devices & services</b></a> and select the <b>ESPHome</b> integration.</li>
+          <li>From the list, under <b>Home Assistant Voice</b>, select <b>Device</b>.</li>
+        </ol>
+    - title: View the sensor data
+      image: voice_grove_port_sensor_data.png
+      content: |
+        <ul>
+          <li>On the device page, under <b>Sensors</b> you can view the new sensor data.</li>
+        </ul>
+procedureGrovePortExampleConigurations:
+  title: Configuration data for selected sensors
+  steps:
+    - title: PIR motion sensor
+      image: pir_motion_sensor.png
+      content: |
+        <ul>
+          <li>Configuration for the <a href="https://shop.m5stack.com/products/pir-module"
+        target="_blank">M5Stack PIR motion sensor</a>.           
+              <code><pre>
+                packages:
+                  grove-power: github://esphome/home-assistant-voice-pe/modules/grove-power.yaml
+                binary_sensor:
+                  - platform: gpio
+                    pin:
+                      number: 2
+                    name: Motion
+                    device_class: motion
+                </pre>
+              </code>
+          </li>
+        </ul>
+    - title: SGP30 TVOC, eCO2 gas sensor
+      image: voice_gas_sensor.png
+      content: |
+        <ul>
+          <li>Configuration for the <a href="https://shop.m5stack.com/products/tvoc-eco2-gas-unit-sgp30"
+        target="_blank">M5Stack SGP30 TVOC, eCO2 gas sensor</a>.           
+              <code><pre>
+                packages:
+                  grove-i2c: github://esphome/home-assistant-voice-pe/modules/grove-i2c.yaml
+                sensor
+                  - platform: sgp30
+                    i2c_id: grove_i2c
+                    tvoc:
+                      name: "TVOC"
+                    eco2:
+                      name: "eCO2"
+                </pre>
+              </code>
+          </li>
+        </ul>
+    - title: Ambient light sensor
+      image: voice_ambient_light_sensor.png
+      content: |
+        <ul>
+          <li>Configuration for the <a href="https://shop.m5stack.com/products/dlight-unit-ambient-light-sensor-bh1750fvi-tr"
+        target="_blank">M5Stack BH1750 ambient light sensor</a>.           
+              <code><pre>
+                packages:
+                  grove-i2c: github://esphome/home-assistant-voice-pe/modules/grove-i2c.yaml
+                sensor:
+                  - platform: bh1750
+                    i2c_id: grove_i2c
+                    name: "Light Intensity"
+                </pre>
+              </code>
+          </li>
+        </ul>
