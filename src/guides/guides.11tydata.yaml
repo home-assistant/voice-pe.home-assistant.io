@@ -240,7 +240,7 @@ procedureConnectGrovePort:
       image: voice_esphome_take_control.png
       content: |
         <ol>
-          <li>Go to <a class="my" href="https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome" target="_blank"><b>Settings</b> > <b>Add-ons</b></a> and install the <b>ESPHome</b> add-on.</li>
+          <li>Go to <a class="my" href="https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome" target="_blank"><b>Settings</b> > <b>Add-ons</b></a> and install the <b>ESPHome Device Builder</b> add-on.</li>
           <li>Start the add-on and select <b>Open web UI</b>.</li>
           <li>On the Home Assistant Voice card, select <b>Take control</b>, and follow the steps of the installer.</li>
         </ol>
