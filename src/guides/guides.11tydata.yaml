@@ -366,12 +366,13 @@ procedureGrovePortExampleConigurations:
 procedureReassemble:
   title: Reassembling the device enclosure
   steps:
-    - title: Place the rubber o-ring
-      image: 09_add_rubber_lug_small.png
+    - title: Place the rubber ring
+      image: voice_remove_place_rubber_ring_480.webp
       content: |
-        <ul>
-          <li>Take the rubber o-ring that you removed earlier and place it onto the new button.</li>
-        </ul>
+        <ol>
+          <li>Take the flatheaded screwdriver and remove the rubber ring from the button. It is glued to the button so this will be a bit sticky.</li>
+          <li>Place the rubber ring onto the new button.</li>
+        </ol>
     - title: Assemble button and dial
       image: 10_assemble_wheel_small.png
       content: |
