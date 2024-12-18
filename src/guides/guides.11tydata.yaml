@@ -370,7 +370,10 @@ procedureReassemble:
       image: voice_remove_place_rubber_ring_480.webp
       content: |
         <ol>
-          <li>Take the flatheaded screwdriver and remove the rubber ring from the button. It is glued to the button so this will be a bit sticky.</li>
+          <li>Take the flathead screwdriver and remove the rubber ring from the button.
+            <ul>
+              <li>The ring is glued to the button so this will be a bit sticky.</li>
+            </ul>
           <li>Place the rubber ring onto the new button.</li>
         </ol>
     - title: Assemble button and dial
