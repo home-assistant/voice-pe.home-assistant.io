@@ -374,11 +374,12 @@ procedureReassemble:
           <li>Place the rubber ring onto the new button.</li>
         </ol>
     - title: Assemble button and dial
-      image: 10_assemble_wheel_small.png
+      image: voice_assemble_dial_button_480.webp
       content: |
-        <ul>
-          <li>Position the dial and the button and gently press until they click into place.</li>
-        </ul>
+        <ol>
+          <li>Position the button inside the dial.</li>
+          <li>Gently press them onto the board until they click into place.</li>
+        </ol>
     - title: Place the LED diffusor
       image: 11_assemble_led_diffuser.png
       content: |
