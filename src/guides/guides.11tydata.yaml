@@ -364,6 +364,78 @@ procedureGrovePortExampleConigurations:
               </code>
           </li>
         </ul>
+procedureDisassemble:
+  title: Disassembling the device enclosure
+  steps:
+    - title: Remove the rubber pads and screws
+      image: 01_remove_pads_small.png
+      content: |
+        <ol>
+          <li>Remove the 4 rubber pads.</li>
+          <li>Take the crosshead screwdriver and unscrew the 4 screws.</li>
+        </ol>
+    - title: Remove the top enclosure
+      image: 02_remove_top_enclosure_small.png
+      content: |
+        <ol>
+          <li>Remove the top enclosure.</li>
+          <li>If you only want to replace the top cover, your job is done here. 
+          <ul>
+            <li>You can now <a href="/guides/reassemble/"
+            target="_blank">reassemble the enclosure</a> with your own parts.</li>
+          <ul>
+          </li>
+        </ol>
+    - title: Remove the PCB
+      image: 03_remove_pcb_screws_small.png
+      content: |
+        <ul>
+          <li>Unscrew the 4 screws that hold the PCB.</li>
+        </ul>
+    - title: Remove the speaker
+      image: 05_remove_speaker_small.png
+      content: |
+        <ol>
+          <li>Unscrew the 2 screws that hold the speaker.</li>
+          <li>Store those screws separately; they are smaller than the ones for the PCB.</li>
+          <li>If you only want to replace the top enclosure and the bottom enclosure, your job is done here.
+            <ul>
+              <li>You can now <a href="/guides/reassemble/"
+              target="_blank">reassemble the enclosure</a> with your own parts.</li>
+            <ul>
+          </li>
+        </ol>
+    - title: Remove the mute switch
+      image: voice_remove_mute_switch_480.webp
+      content: |
+        <ul>
+          <li>Carefully pull on the mute switch and remove it.</li>
+        </ul>
+    - title: Remove the LED diffuser ring
+      image: voice_remove_diffuser_480.webp
+      content: |
+        <ol>
+          <li>Slide the flat screwdriver underneath the LED diffuser ring.</li>
+          <li>Give the screwdriver a slight twist to detach the LED diffuser ring.</li>
+        </ol>
+    - title: Remove the dial and the center button
+      image: voice_remove_dial_480.webp
+      content: |
+        <ol>
+          <li>Locate the slot on the rear of the PCB.</li>
+          <li>Hold your finger on the center button to ensure the rotary encoder part underneath the button doesn't accidentally disassemble.</li>
+          <li>Keep holding the button and gently push the tip of the flat screwdriver through the slot.</li>
+          <li>Proceed carefully and don't apply too much force.</li>
+          <li>Push the button out of the LED ring.</li>
+        </ol>
+    - title: All done!
+      image: 07_bis_fully_disassembled_small.png
+      content: |
+        <ol>
+          <li>Congratulations! You've disassembled the device enclosure.</li>
+          <li>You can now <a href="/guides/reassemble/"
+              target="_blank">put it back together</a> using your own awesome 3D printed parts.</li>
+        </ol>
 procedureReassemble:
   title: Reassembling the device enclosure
   steps:
@@ -384,11 +456,11 @@ procedureReassemble:
           <li>Position the button inside the dial.</li>
           <li>Gently press them onto the board until they click into place.</li>
         </ol>
-    - title: Place the LED diffusor ring
+    - title: Place the LED diffuser ring
       image: voice_place_diffusor_480.webp
       content: |
         <ul>
-          <li>Position the LED diffusor ring around the dial and gently press until it clicks into place.</li>
+          <li>Position the LED diffuser ring around the dial and gently press until it clicks into place.</li>
         </ul>
     - title: Attach the speaker
       image: 12_assemble_speaker_small.png
