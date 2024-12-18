@@ -410,12 +410,13 @@ procedureDisassemble:
         <ul>
           <li>Carefully pull on the mute switch and remove it.</li>
         </ul>
-    - title: Remove the LED diffuser
-      image: 06_remove_led_diffuser_small.png
+    - title: Remove the LED diffuser ring
+      image: voice_remove_diffuser_480.webp
       content: |
-        <ul>
-          <li>Use the flat screwdriver and remove the LED diffuser.</li>
-        </ul>
+        <ol>
+          <li>Slide the flat screwdriver underneeth the LED diffuser ring. and twist the screwdriver.</li>
+          <li>Give the screwdriver a slight twist to detach the LED diffuser ring.</li>
+        </ol>
     - title: Remove the dial and the center button
       image: 07_unclip_wheel_small.png
       content: |
@@ -452,11 +453,11 @@ procedureReassemble:
           <li>Position the button inside the dial.</li>
           <li>Gently press them onto the board until they click into place.</li>
         </ol>
-    - title: Place the LED diffusor ring
+    - title: Place the LED diffuser ring
       image: voice_place_diffusor_480.webp
       content: |
         <ul>
-          <li>Position the LED diffusor ring around the dial and gently press until it clicks into place.</li>
+          <li>Position the LED diffuser ring around the dial and gently press until it clicks into place.</li>
         </ul>
     - title: Attach the speaker
       image: 12_assemble_speaker_small.png
