@@ -380,11 +380,11 @@ procedureReassemble:
           <li>Position the button inside the dial.</li>
           <li>Gently press them onto the board until they click into place.</li>
         </ol>
-    - title: Place the LED diffusor
-      image: 11_assemble_led_diffuser.png
+    - title: Place the LED diffusor ring
+      image: voice_place_diffusor_480.webp
       content: |
         <ul>
-          <li>Position the LED diffusor around the dial and gently press until it clicks into place.</li>
+          <li>Position the LED diffusor ring around the dial and gently press until it clicks into place.</li>
         </ul>
     - title: Attach the speaker
       image: 12_assemble_speaker_small.png
