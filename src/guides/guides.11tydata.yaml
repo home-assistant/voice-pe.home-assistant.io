@@ -200,7 +200,7 @@ procedureScripts:
       image: voice_select_assistant_spanish.png
       content: |
         <ol>
-          <li>To select a different assistant when something happens, use the <code>select.select_option</code> actions. For example, when a button is pressed.           
+          <li>To select a different assistant when something happens, use the <code>select.select_option</code> action. For example, when a button is pressed.           
               <code>
                 <pre>
                   action: select.select_option
@@ -219,8 +219,8 @@ procedureScripts:
     - title: Change the wake word
       image: voice_select_wake_word_mycroft.png
       content: |
-        <ul>
-          <li>You can use <code>select.select_option</code> actions to select a different wake word when something happens.           
+        <ol>
+          <li>To select a different wake word when something happens, use the <code>select.select_option</code> action.           
               <code>
                 <pre>
                   action: select.select_option
@@ -231,9 +231,9 @@ procedureScripts:
                 </pre>
               </code>
           </li>
-          <li>Under <b>Options</b>, enter the preferred wake word. The default options are , <code>Hey Jarvis</code>, <code>Hey Mycroft</code>, and <code>Okay Nabu</code>.</li>
+          <li>Under <b>Options</b>, enter the preferred wake word. The default options are <code>Hey Jarvis</code>, <code>Hey Mycroft</code>, and <code>Okay Nabu</code>.</li>
           <li>Make sure to spell it exactly as you named it.</li>
-        </ul>
+        </ol>
 procedureConnectGrovePort:
   title: Connecting a sensor to the grove port
   steps:
