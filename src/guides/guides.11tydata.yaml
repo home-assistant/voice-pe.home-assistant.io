@@ -388,7 +388,7 @@ procedureReassemble:
       image: 12_assemble_speaker_small.png
       content: |
         <ul>
-          <li>Take the crossscrewdriver and attach the speaker with the 2 screws.</li>
+          <li>Take the crosshead screwdriver and attach the speaker with the 2 screws.</li>
         </ul>
     - title: Attach the microphone switch
       image: 13_assemble_mic_switch_small.png
@@ -403,7 +403,7 @@ procedureReassemble:
         <ul>
           <li>Take the crosshead screwdriver and the 4 screws and attach the PCB.</li>
         </ul>
-    - title: Place top cover
+    - title: Place the top cover
       image: 15_add_top_enclosure_small.png
       content: |
         <ul>
