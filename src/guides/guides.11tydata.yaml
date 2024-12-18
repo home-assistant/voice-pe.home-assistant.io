@@ -363,3 +363,62 @@ procedureGrovePortExampleConigurations:
               </code>
           </li>
         </ul>
+procedureReassemble:
+  title: Reassembling the device enclosure
+  steps:
+    - title: Place the rubber o-ring
+      image: 09_add_rubber_lug_small.png
+      content: |
+        <ul>
+          <li>Take the rubber o-ring that you removed earlier and place it onto the new button.</li>
+        </ul>
+    - title: Assemble button and dial
+      image: 10_assemble_wheel_small.png
+      content: |
+        <ul>
+          <li>Position the dial and the button and gently press until they click into place.</li>
+        </ul>
+    - title: Place the LED diffusor
+      image: 11_assemble_led_diffuser.png
+      content: |
+        <ul>
+          <li>Position the LED diffusor around the dial and gently press until it clicks into place.</li>
+        </ul>
+    - title: Attach the speaker
+      image: 12_assemble_speaker_small.png
+      content: |
+        <ul>
+          <li>Take the crossscrewdriver and attach the speaker with the 2 screws.</li>
+        </ul>
+    - title: Attach the microphone switch
+      image: 13_assemble_mic_switch_small.png
+      content: |
+        <ul>
+          <li>Attach the microphone switch.</li>
+          <li>Mind the orientation. The colored part should face the middle, not the corner.</li>
+        </ul>
+    - title: Attach the PCB
+      image: 14_add_pcb_screws_small.png
+      content: |
+        <ul>
+          <li>Take the crosshead screwdriver and the 4 screws and attach the PCB.</li>
+        </ul>
+    - title: Place top cover
+      image: 15_add_top_enclosure_small.png
+      content: |
+        <ul>
+          <li>Attach the top cover.</li>
+        </ul>
+    - title: Close the enclosure
+      image: 16_add_4_screws_and_rubber_pads_small.png
+      content: |
+        <ul>
+          <li>Take the crosshead screwdriver and the 4 screws and close the enclosure.</li>
+          <li>Place the rubber feet.</li>
+        </ul>
+    - title: Done!
+      image: 15_add_top_enclosure_small.png
+      content: |
+        <ul>
+          <li>Connect a USB-C power supply and continue using the device.</li>
+        </ul>
