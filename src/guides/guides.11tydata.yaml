@@ -414,7 +414,7 @@ procedureDisassemble:
       image: voice_remove_diffuser_480.webp
       content: |
         <ol>
-          <li>Slide the flat screwdriver underneeth the LED diffuser ring. and twist the screwdriver.</li>
+          <li>Slide the flat screwdriver underneath the LED diffuser ring. and twist the screwdriver.</li>
           <li>Give the screwdriver a slight twist to detach the LED diffuser ring.</li>
         </ol>
     - title: Remove the dial and the center button
