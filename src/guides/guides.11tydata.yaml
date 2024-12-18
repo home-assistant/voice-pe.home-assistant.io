@@ -371,7 +371,7 @@ procedureDisassemble:
       content: |
         <ol>
           <li>Remove the 4 rubber pads.</li>
-          <li>Grab the crosshead screwdriver and unscrew the 4 rear screws.</li>
+          <li>Take the crosshead screwdriver and unscrew the 4 screws.</li>
         </ol>
     - title: Remove the top enclosure
       image: 02_remove_top_enclosure_small.png
@@ -385,7 +385,7 @@ procedureDisassemble:
           <ul>
           </li>
         </ol>
-    - title: Remove the the PCB screws
+    - title: Remove the PCB
       image: 03_remove_pcb_screws_small.png
       content: |
         <ul>
@@ -414,7 +414,7 @@ procedureDisassemble:
       image: voice_remove_diffuser_480.webp
       content: |
         <ol>
-          <li>Slide the flat screwdriver underneath the LED diffuser ring. and twist the screwdriver.</li>
+          <li>Slide the flat screwdriver underneath the LED diffuser ring.</li>
           <li>Give the screwdriver a slight twist to detach the LED diffuser ring.</li>
         </ol>
     - title: Remove the dial and the center button
