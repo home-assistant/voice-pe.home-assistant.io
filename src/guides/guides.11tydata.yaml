@@ -428,3 +428,75 @@ procedureDisassemble:
           <li>Congratulations! You've disassembled the device enclosure.</li>
           <li>You can now put it back together using your own awesome 3D printed parts.</li>
         </ol>
+procedureReassemble:
+  title: Reassembling the device enclosure
+  steps:
+    - title: Place the rubber ring
+      image: voice_remove_place_rubber_ring_480.webp
+      content: |
+        <ol>
+          <li>Take the flathead screwdriver and remove the rubber ring from the button.
+            <ul>
+              <li>The ring is glued to the button so this will be a bit sticky.</li>
+            </ul>
+          <li>Place the rubber ring onto the new button.</li>
+        </ol>
+    - title: Assemble button and dial
+      image: voice_assemble_dial_button_480.webp
+      content: |
+        <ol>
+          <li>Position the button inside the dial.</li>
+          <li>Gently press them onto the board until they click into place.</li>
+        </ol>
+    - title: Place the LED diffusor ring
+      image: voice_place_diffusor_480.webp
+      content: |
+        <ul>
+          <li>Position the LED diffusor ring around the dial and gently press until it clicks into place.</li>
+        </ul>
+    - title: Attach the speaker
+      image: 12_assemble_speaker_small.png
+      content: |
+        <ul>
+          <li>Take the crosshead screwdriver and attach the speaker with the 2 screws.</li>
+        </ul>
+    - title: Attach the mute switch
+      image: voice_assemble_mute_switch_480.webp
+      content: |
+        <ol>
+          <li>Attach the mute switch.</li>
+          <li>Mind the orientation. The colored part should face the middle, not the corner.</li>
+          <li>Find the switch opening in the case.</li>
+          <li>Slide the board into the case. Make sure the switch goes through the opening.</li>
+        </ol>
+    - title: Attach the PCB
+      image: 14_add_pcb_screws_small.png
+      content: |
+        <ul>
+          <li>Take the crosshead screwdriver and the 4 screws and attach the PCB.</li>
+        </ul>
+    - title: Place the top cover onto the device
+      image: voice_assemble_top_cover_480.webp
+      content: |
+        <ol>
+          <li>Pick up the top cover and orient it to fit the case.
+            <ul>
+              <li>The 2 holes should be above the microphones.</li>
+              <li>Watch out for the side with the wider border.</li>
+            </ul>
+          </li>
+          <li>Slide the top cover onto the device.</li>
+        </ol>
+    - title: Close the enclosure
+      image: 16_add_4_screws_and_rubber_pads_small.png
+      content: |
+        <ol>
+          <li>Take the crosshead screwdriver and the 4 screws and close the enclosure.</li>
+          <li>Place the rubber feet.</li>
+        </ol>
+    - title: Done!
+      image: 15_add_top_enclosure_small.png
+      content: |
+        <ul>
+          <li>Connect a USB-C power supply and continue using the device.</li>
+        </ul>
