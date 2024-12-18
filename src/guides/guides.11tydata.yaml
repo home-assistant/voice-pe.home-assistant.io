@@ -407,12 +407,18 @@ procedureReassemble:
         <ul>
           <li>Take the crosshead screwdriver and the 4 screws and attach the PCB.</li>
         </ul>
-    - title: Place the top cover
-      image: 15_add_top_enclosure_small.png
+    - title: Place the top cover onto the device
+      image: voice_assemble_top_cover_480.webp
       content: |
-        <ul>
-          <li>Attach the top cover.</li>
-        </ul>
+        <ol>
+          <li>Pick up the top cover and orient it to fit the case.
+            <ul>
+              <li>The 2 holes should be above the microphones.</li>
+              <li>Watch out for the side with the wider border.</li>
+            </ul>
+          </li>
+          <li>Slide the top cover onto the device.</li>
+        </ol>
     - title: Close the enclosure
       image: 16_add_4_screws_and_rubber_pads_small.png
       content: |
