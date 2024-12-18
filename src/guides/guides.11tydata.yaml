@@ -392,12 +392,14 @@ procedureReassemble:
         <ul>
           <li>Take the crosshead screwdriver and attach the speaker with the 2 screws.</li>
         </ul>
-    - title: Attach the microphone switch
-      image: 13_assemble_mic_switch_small.png
+    - title: Attach the mute switch
+      image: voice_assemble_mute_switch_480.webp
       content: |
         <ol>
-          <li>Attach the microphone switch.</li>
+          <li>Attach the mute switch.</li>
           <li>Mind the orientation. The colored part should face the middle, not the corner.</li>
+          <li>Find the switch opening in the case.</li>
+          <li>Slide the board into the case. Make sure the switch goes through the opening.</li>
         </ol>
     - title: Attach the PCB
       image: 14_add_pcb_screws_small.png
