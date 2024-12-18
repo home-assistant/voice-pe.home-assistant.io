@@ -393,10 +393,10 @@ procedureReassemble:
     - title: Attach the microphone switch
       image: 13_assemble_mic_switch_small.png
       content: |
-        <ul>
+        <ol>
           <li>Attach the microphone switch.</li>
           <li>Mind the orientation. The colored part should face the middle, not the corner.</li>
-        </ul>
+        </ol>
     - title: Attach the PCB
       image: 14_add_pcb_screws_small.png
       content: |
@@ -412,10 +412,10 @@ procedureReassemble:
     - title: Close the enclosure
       image: 16_add_4_screws_and_rubber_pads_small.png
       content: |
-        <ul>
+        <ol>
           <li>Take the crosshead screwdriver and the 4 screws and close the enclosure.</li>
           <li>Place the rubber feet.</li>
-        </ul>
+        </ol>
     - title: Done!
       image: 15_add_top_enclosure_small.png
       content: |
