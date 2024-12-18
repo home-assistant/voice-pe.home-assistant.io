@@ -411,8 +411,9 @@ procedureDisassemble:
       content: |
         <ol>
           <li>To remove the dial and the center button, locate the slot on the rear of the PCB.</li>
-          <li>Gently push the tip of the flat screwdriver through the slot.</li>
-          <li>Proceed careefully and don't apply too much force. The rotation mechanism must stay in place.</li>
+          <li>Hold your finger on the center button to ensure the rotary encoder part underneath the button doesn't accidentally disassemble.</li>
+          <li>Keep holding the button and gently push the tip of the flat screwdriver through the slot.</li>
+          <li>Proceed carefully and don't apply too much force.</li>
         </ol>
     - title: Remove the rubber o-ring
       image: 08_remove_rubber_lug_small.png
