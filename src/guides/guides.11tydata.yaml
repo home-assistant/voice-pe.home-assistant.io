@@ -457,10 +457,11 @@ procedureReassemble:
           <li>Gently press them onto the board until they click into place.</li>
         </ol>
     - title: Place the LED diffuser ring
-      image: voice_place_diffusor_480.webp
+      image: voice_place_diffuser_480.webp
       content: |
         <ul>
-          <li>Position the LED diffuser ring around the dial and gently press until it clicks into place.</li>
+        <li>The LED diffuser ring has a small latch. Make sure it aligns with the notch in the board.</li>
+        <li>Gently press the LED diffuser ring until it clicks into place.</li>
         </ul>
     - title: Attach the speaker
       image: 12_assemble_speaker_small.png
