@@ -440,7 +440,7 @@ procedureReassemble:
   title: Reassembling the device enclosure
   steps:
     - title: Place the rubber ring
-      image: voice_remove_place_rubber_ring_480.webp
+      image: voice_replace_rubber_ring_480.webp
       content: |
         <ol>
           <li>Take the flathead screwdriver and remove the rubber ring from the button.
