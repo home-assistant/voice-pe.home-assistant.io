@@ -7,6 +7,7 @@ html {
   --divider-color: rgba(0, 0, 0, 0.12);
   --primary-color: #03a9f4;
   --accent-color: #03a9f4;
+  --accent-color-light: #03a8f483;
   --background-color-alert-note: #e7f2fa;
 }
 
@@ -288,6 +289,20 @@ h3 {
 .banner .secondary {
   font-size: 36px;
   font-weight: 500;
+}
+
+.tinker-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  background-color: var(--accent-color-light);
+  color: var(--accent-text-color);
+  line-height: 1.2;
+  padding: 24px;
+  margin: 16px 0;
 }
 
 
