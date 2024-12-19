@@ -9,13 +9,13 @@ procedureFactoryReset:
           <li>In the Home Assistant documentation, follow the steps on <a href="https://www.home-assistant.io/common-tasks/general/#removing-an-integration-instance" target="_blank">removing an integration instance</a>.</li>
         </ul>
     - title: Press the button until it lights up red (22 seconds)
-      image: voice_factory_reset.webp
+      image: voice_reset_v2_480.webp
       content: |
         <ul>
-          <li>Keep pressing the button until the red light is turned off.</li>
-          <li><b>Result</b>: Once the light turns off, the reset is complete. All data is cleared from the device.</li>
+          <li>Keep pressing the button until the red circle is complete and the device tells you to stop pressing.</li>
+          <li><b>Result</b>: Once the reset is complete. All data is cleared from the device.</li>
           <li><b>Info</b>: If you stop pressing the button before the red light has completed the circle, the reset process is aborted.</li>
-          <li><b>Info</b>: After the reset is complete, the device should start up again and show a white twinkle, indicating that it is ready to be connected. If the device does not seem to be starting back up, power-cycle it.</li>
+          <li><b>Info</b>: After the reset is complete, the device starts up again. The white twinkle indicates that it is ready to be connected.</li>
         </ul>
 procedureVolumeControl:
   title: Changing the volume of the device
