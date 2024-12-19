@@ -450,11 +450,14 @@ procedureReassemble:
           <li>Place the rubber ring onto the new button.</li>
         </ol>
     - title: Assemble button and dial
-      image: voice_assemble_dial_button_480.webp
+      image: voice_assemble_dial_480.webp
       content: |
         <ol>
-          <li>Position the button inside the dial.</li>
-          <li>Gently press them onto the board until they click into place.</li>
+          <li>Take note of the orientation of the rotary disk. Rotate until it is aligned as shown in the video.</li>
+          <li>Place the button onto the rotary disk.</li>
+          <li>Take the dial and take note of the square cutout. It must align with the button.</li>
+          <li>Slide the dial onto the board and press until it clicks into place.</li>
+          <li>Rotate the dial. It must rotate easily. If it does not, make sure it is not tilted.</li>
         </ol>
     - title: Place the LED diffuser ring
       image: voice_place_diffusor_480.webp
