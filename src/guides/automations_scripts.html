@@ -1,0 +1,54 @@
+---
+layout: guide
+description: Using scripts and automations to control Home Assistant Voice Preview Edition
+guideName: Using scripts and automations to control the device
+videos:
+- url: "https://www.youtube.com/embed/QhhuCzbQEag"
+  title: "Use automations and scripts to control Home Assistant Voice Preview Edition"
+---
+
+<div class="container">
+  <div><h1 class="text-center"></h1></div>
+  <div class="layout horizontal">         
+      <div class="layout vertical">
+        <p>You can use scripts and automations to control the device. The steps below show a few examples of what you could do.        
+        </p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="videos">
+  {% for video in videos %}
+  <div class="video">
+    <iframe
+      width="650"
+      height="365"
+      src="{{ video.url}}"
+      title="{{ video.title}}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  {% endfor %}
+</div>
+
+{% render "example.include.liquid", proc: procedureScripts %}
+
+<div class="container">
+  
+  <div class="text">         
+    <h1>Related topics</h1>
+    <span>
+      <ul>
+        <li><a href="https://www.home-assistant.io/integrations/event/"
+        target="_blank">Event entities</a>
+        </li>
+        <li><a href="https://www.home-assistant.io/integrations/event/#automating-on-a-button-press" target="_blank">Automating on a button press</a></li>
+        <li><a href="https://gist.github.com/jlpouffier/68434e51c8e347e974a791f90914c591"
+        target="_blank">VPE Button Press Automation Example</a>
+        </li>
+      </ul>
+    </span>
+  </div>
+</div>

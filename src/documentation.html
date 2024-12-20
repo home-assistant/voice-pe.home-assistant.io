@@ -34,6 +34,15 @@ update:
 troubleshooting:
   - title: Resetting the device
     url: /guides/reset/
+customize:
+  - title: Using automations and scripts to control the device
+    url: /guides/automations_scripts/
+  - title: Connecting a sensor to the grove port
+    url: /guides/grove_port/
+  - title: Disassembling the device
+    url: /guides/disassemble/
+  - title: Reassembling the device
+    url: /guides/reassemble/
 ---
 
 <div class="container">
@@ -61,7 +70,7 @@ troubleshooting:
     </a>
     {% endfor %}
   </div>
-  <h1>Update</h1>
+  <h1>Updating</h1>
   <div class="layout horizontal items">
     {% for guide in update %}
     <a href="{{guide.url}}">
@@ -72,6 +81,14 @@ troubleshooting:
   <h1>Troubleshooting</h1>
   <div class="layout horizontal items">
     {% for guide in troubleshooting %}
+    <a href="{{guide.url}}">
+      <div class="layout vertical center">{{guide.title}}</div>
+    </a>
+    {% endfor %}
+  </div>
+  <h1>Customizing</h1>
+  <div class="layout horizontal items">
+    {% for guide in customize %}
     <a href="{{guide.url}}">
       <div class="layout vertical center">{{guide.title}}</div>
     </a>

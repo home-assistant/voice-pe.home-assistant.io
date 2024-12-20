@@ -7,6 +7,7 @@ html {
   --divider-color: rgba(0, 0, 0, 0.12);
   --primary-color: #03a9f4;
   --accent-color: #03a9f4;
+  --accent-color-light: #03a8f483;
   --background-color-alert-note: #e7f2fa;
 }
 
@@ -172,13 +173,14 @@ h3 {
   max-width: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 920px) {
   .nav-bar {
     flex-direction: column;
   }
 
   .nav-bar .logo {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -218,6 +220,18 @@ h3 {
   color: inherit;
   text-decoration: none;
   border: 1px solid var(--divider-color);
+  border-radius: 24px;
+  margin: 0 8px;
+  padding: 8px;
+  text-align: center;
+  background-color: var(--secondary-background-color);
+}
+
+
+.card {
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid var(--primary-text-color);
   border-radius: 24px;
   margin: 0 8px;
   padding: 8px;
@@ -275,6 +289,20 @@ h3 {
 .banner .secondary {
   font-size: 36px;
   font-weight: 500;
+}
+
+.tinker-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  background-color: var(--accent-color-light);
+  color: var(--accent-text-color);
+  line-height: 1.2;
+  padding: 24px;
+  margin: 16px 0;
 }
 
 
@@ -549,6 +577,78 @@ td {
   border: 1px solid var(--primary-text-color);
   border-collapse: collapse;
   padding: 5px 7px 5px 7px;
+}
+
+/* landing page*/
+
+.landing-page-button {
+  color: var(--primary-background-color);
+  background-color: var(--secondary-text-color);
+  border-radius: 12px;
+  padding: 8px 12px;
+  margin: 8px;
+  text-decoration: none !important;
+}
+
+/* landing page top*/
+
+.landing-page-top-box {
+  display: flex;
+  margin: 8px;
+  padding: 0;
+  height: 320px;
+  background-image: url('/images/ha_voice_pe_with_other_devices.jpg');
+  background-size: 100% auto;
+  border: none;
+
+  /* area for text and buttons */
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fffdfd79;
+    margin: auto auto 0;
+    border-radius: 0 0 16px 16px;
+
+    p {
+      text-align: left;
+      line-height: 0.5em;
+      padding: 0 16px;
+    }
+
+    p:first-of-type {
+      font-weight: 500;
+    }
+
+    p:last-of-type {
+      font-size: .75em;
+      margin-bottom: 16px;
+    }
+  }
+
+  .buttons {
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .landing-page-top-box {
+    .content {
+      flex-direction: column;
+
+      p {
+        line-height: 1em;
+      }
+
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
 }
 
 
