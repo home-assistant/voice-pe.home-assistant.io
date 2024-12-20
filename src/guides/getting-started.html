@@ -3,7 +3,8 @@ layout: getting-started
 description: Connecting the device to your Wi-Fi using a phone or via Bluetooth
 guideName: Connecting the device to your Wi-Fi
 videos:
-  - url: "https://youtube.com/embed/u8sk6B8_Qkc?start=33"
+  - url: "https://youtube.com/embed/ZgoaoTpIhm8?start=1940"
+    title: "Introducing the Home Assistant Voice Preview Edition - Voice: Chapter 8"
 tools:
   title: Prerequisites
   image: voice_prereqs_01.png
@@ -128,6 +129,22 @@ procedureOnboarding:
           </li>
         </ul>
 ---
+
+<div class="videos">
+  {% for video in videos %}
+  <div class="video">
+    <iframe
+      width="650"
+      height="365"
+      src="{{ video.url}}"
+      title="{{ video.title}}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  {% endfor %}
+</div>
 
 {% render "tools.include.liquid", tools: tools %}
 {% render "proc.include.liquid", proc: procedureOnboarding %}
