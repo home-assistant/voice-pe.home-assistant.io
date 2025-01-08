@@ -512,3 +512,30 @@ procedureReassemble:
         <ul>
           <li>Connect a USB-C power supply and continue using the device.</li>
         </ul>
+procedureReinstallFirmware:
+  title: Reinstalling the firmware
+  steps:
+    - title: Connect the device to your computer
+      image: voice_esp_connect_usb.png
+      content: |
+        <ol>
+          <li>Take a USB-C cable and connect the device to your computer.</li>            
+          <li>Open the ESPHome <a href="https://esphome.github.io/home-assistant-voice-pe/" target="_blank">Webflasher page for Home Assistant Voice PE</a>.
+            <ul><li><b>Info</b>: The Webflasher page is a tool that allows you to flash firmware to your device.</li></ul>
+          </li>
+         <li>On the Webflasher page, select <b>Connect</b> and select the device from the list of USB devices.</li>
+         <li>Select <b>Connect</b> again.</li>
+        </ol>
+    - title: Install the firmware
+      image: voice_esp_install.png
+      content: |
+        <ol>
+          <li>Select <b>Install</b> and follow the wizard.</li>
+          <li>When prompted, enter the credentials to your Wi-Fi network.
+            <ul>
+              <li>If you have different Wi-Fi names for the 2.4 GHz and the 5 GHz Wi-Fi networks, make sure you use the credentials for the 2.4 GHz network.</li>
+            </ul>
+          </li>
+          <li>Congratulations! You have successfully reinstalled the firmware.</li>
+         <li>To add the device to Home Assistant, follow the <a href="/getting-started/" target="_blank">Getting started</a> steps.</li>
+        </ol>
