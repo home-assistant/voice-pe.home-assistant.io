@@ -527,7 +527,7 @@ procedureInternalGPIO:
               <li><code>IO40</code>, <code>IO48</code></li>
             </ul>
           </li>
-          <li><b>Caution</b>: Risk of damaging VPE components due to high current.
+          <li><b>Notice</b>: Risk of damaging VPE components due to high current.
             <ul>
               <li>Current drawn from GPIO pins should be limited to 20 milliamps (mA) or damage to the ESP32-S3 may occur.</li>
             </ul>
@@ -555,7 +555,7 @@ procedureInternalGPIO:
           </li>
           <li><b>Power pins (+5&nbsp;V, +3.3&nbsp;V)</b>:
             <ul>
-              <li><b>Caution</b>: Risk of damaging VPE components due to high current.
+              <li><b>Notice</b>: Risk of damaging VPE components due to high current.
                 <ul>
                   <li><b>Mind the power limitations</b>
                     <ul>
@@ -582,7 +582,7 @@ procedureInternalGPIO:
       content: |
         <ul>
          <li><b>Pin assignments</b>:  <code>SCL</code>, <code>SDA</code>, <code>5V</code>, <code>GND</code></li>
-          <li><b>Caution</b>: Risk of damaging VPE components due to high current.
+          <li><b>Notice</b>: Risk of damaging VPE components due to high current.
             <ul>
               <li>Current drawn from GPIO pins should be limited to 20 milliamps (mA) or damage to the ESP32-S3 may occur.</li>
             </ul>
