@@ -1,0 +1,45 @@
+---
+layout: tinker-guide
+description: Notes about the internal GPIO pins
+guideName: About the internal GPIO pins
+---
+
+<div class="container">
+  <div><h1 class="text-center"></h1></div>  
+  <div class="container">
+    <div>
+    <div class="layout vertical left">
+      <p>If you open the device, you can access 2 sets of GPIO pins.</p>
+    </div></div>
+  </div>
+  <div class="layout horizontal left">      
+  
+  <div style="padding: 0px 45px 16px 0px">
+    <img src="/images/voice_pe_internal_pin_headers.jpg"  />
+  </div>
+</div>
+<div class="container">
+  <div class="alert alert-note">
+    <p class="alert-title">Notice</p>
+    <p class="alert-content">Opening the device and connecting to the GPIO pins voids the warranty.</p>
+  </div>
+</div>
+
+
+{% render "gpio.include.liquid", proc: procedureInternalGPIO %}
+
+<div class="container">
+  <div class="text">
+    <h1>Related topics</h1>
+    <span>
+      <ul>
+        <li><a href="/guides/disassemble/"
+        target="_blank">Disassembling the device</a>
+        </li>
+        <li><a href="/guides/reassemble/"
+        target="_blank">Reassembling the device</a>
+        </li>
+      </ul>
+    </span>
+  </div>
+</div>
