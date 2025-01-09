@@ -521,10 +521,10 @@ procedureInternalGPIO:
         <ul>
           <li><b>Pin assignments</b>:
             <ul>              
-              <li>`IO47`, `GND`</li>
-              <li>`IO42`, `RGBOUT`</li>
-              <li>`IO41`, `RGBIN`</li>
-              <li>`IO40`, `IO48`</li>
+              <li><code>IO47</code>, <code>GND</code></li>
+              <li><code>IO42</code>, <code>RGBOUT</code></li>
+              <li><code>IO41</code>, <code>RGBIN</code></li>
+              <li><code>IO40</code>, <code>IO48</code></li>
             </ul>
           </li>
           <li><b>Caution</b>: Risk of damaging VPE components due to high current.
@@ -547,10 +547,10 @@ procedureInternalGPIO:
         <ul>
           <li><b>Pin assignments</b>:
             <ul>
-              <li>`+3.3 V`, `+5 V`</li>
-              <li>`IO02`, `IO39`</li>
-              <li>`IO01`, `IO38`</li>
-              <li>`RXD`, `TXD`</li>
+              <li><code>+3.3 V</code>, <code>+5 V</code></li>
+              <li><code>IO02</code>, <code>IO39</code></li>
+              <li><code>IO01</code>, <code>IO38</code></li>
+              <li><code>RXD</code>, <code>TXD</code></li>
             </ul>
           </li>
           <li><b>Power pins (+5&nbsp;V, +3.3&nbsp;V)</b>:
@@ -581,7 +581,7 @@ procedureInternalGPIO:
       image: voice_pe_internal_pin_group_03_grove_port.jpg
       content: |
         <ul>
-         <li><b>Pin assignments</b>:  SCL, SDA, 5V, GND</li>
+         <li><b>Pin assignments</b>:  <code>SCL</code>, <code>SDA</code>, <code>5V</code>, <code>GND</code></li>
           <li><b>Caution</b>: Risk of damaging VPE components due to high current.
             <ul>
               <li>Current drawn from GPIO pins should be limited to 20 milliamps (mA) or damage to the ESP32-S3 may occur.</li>
