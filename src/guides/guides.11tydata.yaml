@@ -515,16 +515,16 @@ procedureReassemble:
 procedureInternalGPIO:
   title: About the GPIO pins
   steps:
-    - title: Pins in corner
+    - title: Pin header in corner
       image: voice_pe_internal_pin_group_01.jpg
       content: |
         <ul>
-          <li><b>Pin headers</b>:
+          <li><b>Pin assignments</b>:
             <ul>              
-              <li1047, GND</li>
-              <li>1042, RGBOUT</li>
-              <li>1041, RGBIN</li>
-              <li>1040, 1048</li>
+              <li>`IO47`, `GND`</li>
+              <li>`IO42`, `RGBOUT`</li>
+              <li>`IO41`, `RGBIN`</li>
+              <li>`IO40`, `IO48`</li>
             </ul>
           </li>
           <li><b>Caution</b>: Risk of damaging VPE components due to high current.
@@ -541,19 +541,19 @@ procedureInternalGPIO:
             </ul>
           </li>
         </ul>
-    - title: Pins in board center
+    - title: Pin header in board center
       image: voice_pe_internal_pin_group_02_center.jpg
       content: |
         <ul>
-          <li><b>Pin headers</b>:
+          <li><b>Pin assignments</b>:
             <ul>
-              <li>+3.3&nbsp;V, +5&nbsp;V</li>
-              <li>1002, 1039</li>
-              <li>1001, 1038</li>
-              <li>RXD, TXD</li>
+              <li>`+3.3 V`, `+5 V`</li>
+              <li>`IO02`, `IO39`</li>
+              <li>`IO01`, `IO38`</li>
+              <li>`RXD`, `TXD`</li>
             </ul>
           </li>
-          <li><b>power pins (+5&nbsp;V, +3.3&nbsp;V)</b>:
+          <li><b>Power pins (+5&nbsp;V, +3.3&nbsp;V)</b>:
             <ul>
               <li><b>Caution</b>: Risk of damaging VPE components due to high current.
                 <ul>
@@ -581,7 +581,7 @@ procedureInternalGPIO:
       image: voice_pe_internal_pin_group_03_grove_port.jpg
       content: |
         <ul>
-         <li><b>Pin headers</b>:  SCL, SDA, 5V, GND</li>
+         <li><b>Pin assignments</b>:  SCL, SDA, 5V, GND</li>
           <li><b>Caution</b>: Risk of damaging VPE components due to high current.
             <ul>
               <li>Current drawn from GPIO pins should be limited to 20 milliamps (mA) or damage to the ESP32-S3 may occur.</li>
