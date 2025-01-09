@@ -587,7 +587,7 @@ procedureInternalGPIO:
               <li>Current drawn from GPIO pins should be limited to 20 milliamps (mA) or damage to the ESP32-S3 may occur.</li>
             </ul>
           </li>
-          <li><b>+5V pin load switch</b>:
+          <li><b>+5V pin power switching</b>:
             <ul>
               <li>The Grove expansion port has a “load switch” on its +5&nbsp;V pin.</li>
               <li>This is controlled by the ESP32-S3’s GPIO pin 46.</li>
