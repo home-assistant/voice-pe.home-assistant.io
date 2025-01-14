@@ -573,7 +573,7 @@ procedureInternalGPIO:
           <li><b>ESP32-S3 TXD and RXD pins</b>:
             <ul>
               <li>The ESP32-S3’s U0TXD and U0RXD (serial/UART) pins are not used by the firmware shipped with the VPE.</li>
-              <li>If you want to watch logs and/or reinstall (re-flash) the ESP32-S3, use the built-in USB port.</li>
+              <li>If you want to watch logs and/or reinstall the ESP32-S3, use the built-in USB port.</li>
             </ul>
           </li>
         </ul>
