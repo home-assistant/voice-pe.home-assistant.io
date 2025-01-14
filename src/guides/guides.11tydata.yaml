@@ -512,6 +512,38 @@ procedureReassemble:
         <ul>
           <li>Connect a USB-C power supply and continue using the device.</li>
         </ul>
+procedureReinstallFirmware:
+  title: Reinstalling the firmware
+  steps:
+    - title: Connect the device to your computer
+      image: voice_esp_connect_usb.png
+      content: |
+        <ol>
+          <li>Take a USB-C cable and connect the device to your computer.</li>            
+          <li>Open the ESPHome <a href="https://esphome.github.io/home-assistant-voice-pe/" target="_blank">web installer page for Home Assistant Voice PE</a>.
+            <ul><li><b>Info</b>: The web installer page is a tool that allows you to install firmware to your device.</li></ul>
+          </li>
+         <li>On the web installer page, select <b>Connect</b> and select the device from the list of USB devices.</li>
+         <li>Select <b>Connect</b> again.</li>
+        </ol>
+    - title: Install the firmware
+      image: voice_esp_install.png
+      content: |
+        <ol>
+          <li>Select <b>Install</b> and follow the wizard.</li>
+          <li>When prompted, enter the credentials to your Wi-Fi network.
+            <ul>
+              <li>If you have different SSIDs (Wi-Fi network names) for the 2.4 GHz and the 5 GHz Wi-Fi networks, make sure you use the credentials for the 2.4 GHz network, as the device cannot connect to 5 GHz Wi-Fi networks.</li>
+            </ul>
+          </li>
+          <li>Congratulations! You have successfully reinstalled the firmware.
+            <ul>
+              <li><b>Troubleshooting</b>: If the reinstallation was not successful, try to <a href="/guides/firmware-reinstall-from-bootloader/"
+              target="_blank">re-install the firmware from bootloader mode</a>.</li>
+            </ul>
+          </li>
+         <li>To add the device to Home Assistant, follow the <a href="/getting-started/" target="_blank">Getting started</a> steps.</li>
+        </ol>
 procedureInternalGPIO:
   title: About the GPIO pins
   steps:
