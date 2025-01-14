@@ -539,7 +539,7 @@ procedureReinstallFirmware:
           <li>Congratulations! You have successfully reinstalled the firmware.
             <ul>
               <li><b>Troubleshooting</b>: If the reinstallation was not successful, try to <a href="/guides/firmware-reinstall-from-bootloader/"
-              target="_blank">re-install the firmware from bootloader mode</a>.</li>
+              target="_blank">reinstall the firmware from bootloader mode</a>.</li>
             </ul>
           </li>
          <li>To add the device to Home Assistant, follow the <a href="/getting-started/" target="_blank">Getting started</a> steps.</li>
