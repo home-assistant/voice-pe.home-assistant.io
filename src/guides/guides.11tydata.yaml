@@ -533,7 +533,7 @@ procedureReinstallFirmware:
           <li>Select <b>Install</b> and follow the wizard.</li>
           <li>When prompted, enter the credentials to your Wi-Fi network.
             <ul>
-              <li>If you have different Wi-Fi names for the 2.4 GHz and the 5 GHz Wi-Fi networks, make sure you use the credentials for the 2.4 GHz network.</li>
+              <li>If you have different SSIDs (Wi-Fi network names) for the 2.4 GHz and the 5 GHz Wi-Fi networks, make sure you use the credentials for the 2.4 GHz network, as the device cannot connect to 5 GHz Wi-Fi networks.</li>
             </ul>
           </li>
           <li>Congratulations! You have successfully reinstalled the firmware.
