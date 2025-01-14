@@ -512,28 +512,6 @@ procedureReassemble:
         <ul>
           <li>Connect a USB-C power supply and continue using the device.</li>
         </ul>
-procedureReinstallFirmwareFromBootloader:
-  title: Reinstalling the firmware from bootloader mode
-  steps:
-    - title: Enter bootloader mode
-      image: voice_authorize.png
-      content: |
-        <ol>
-          <li>Disconnect the device from power.</li>
-          <li>Press and hold the button.</li>
-          <li>Connect the device to your computer.</li>
-          <li>Keep pressing the button for a short moment, then let go.
-            <ul>
-              <li>There is no LED or sound indicating it, but the device is now in booloader mode.</li>
-            </ul>
-          </li>
-        </ol>
-    - title: Open the web installer page
-      image: voice_esp_connect_usb.png
-      content: |
-        <ol>           
-          <li>Open the ESPHome <a href="https://esphome.github.io/home-assistant-voice-pe/" target="_blank">web installer page for Home Assistant Voice PE</a>.
-            <ul><li><b>Info</b>: The web installer is a tool that allows you to install software on your device.</li></ul>
 procedureReinstallFirmware:
   title: Reinstalling the firmware
   steps:
