@@ -533,7 +533,7 @@ procedureReinstallFirmwareFromBootloader:
       content: |
         <ol>           
           <li>Open the ESPHome <a href="https://esphome.github.io/home-assistant-voice-pe/" target="_blank">Webflasher page for Home Assistant Voice PE</a>.
-            <ul><li><b>Info</b>: The Webflasher page is a tool that allows you to flash firmware to your device.</li></ul>
+            <ul><li><b>Info</b>: The web installer is a tool that allows you to install software on your device.</li></ul>
           </li>
          <li>On the Webflasher page, select <b>Connect</b> and select the device from the list of USB devices.</li>
          <li>Select <b>Connect</b> again.</li>
