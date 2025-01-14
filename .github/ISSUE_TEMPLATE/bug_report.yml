@@ -9,6 +9,13 @@ body:
         If you have a feature or enhancement request, please use the [feature request][fr] section of our [Community Forum][fr].
 
         [fr]: https://community.home-assistant.io/c/feature-requests
+
+        If you experience an issue with the Home Assistant Voice Preview Edition software, please use the [Voice PE issue tracker][vpe gh]. Before logging an issue, please check the [list of issues][vpe gh issue tracker].
+        
+        [vpe gh] https://github.com/esphome/home-assistant-voice-pe
+        [vpe gh issue tracker] https://github.com/esphome/home-assistant-voice-pe/issues?q=sort%3Aupdated-desc+is%3Aissue+is%3Aopen
+
+
   - type: textarea
     validations:
       required: true
