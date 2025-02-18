@@ -19,6 +19,11 @@ tools:
             <li>This guide was tested using Home Assistant Operating system on Home Assistant Yellow and on Home Assistant Green.</li>
           </ul>
         </li>
+        <li>Logged in to Home Assistant with a user that has <b>Administrator</b> rights.
+          <ul>
+            <li>To check if a user has <b>Administrator</b> rights, you need to be logged in with <b>Administrator</b> rights. Go to <a href="https://my.home-assistant.io/redirect/people/" target="_blank"><b>Settings</b> > <b>People</b></a> and check the <a href="https://www.home-assistant.io/integrations/person/#adding-a-person-to-home-assistant" target="_blank">settings</a> for that user.</li>
+          </ul>
+        </li> 
         <li>The password to your Wi-Fi network</li>        
     </ul>
     <div>
@@ -28,13 +33,19 @@ tools:
       <ul>        
         <li>Have the <a href="https://companion.home-assistant.io/"
           target="_blank">Home Assistant companion app</a> installed on your iPhone or Android and configured to connect to your Home Assistant instance. Make sure the version is up to date.</li>
+          <li>You are logged in to your Home Assistant Companion app with a user that has <b>Administrator</b> rights.</li>
           <li>On your phone, make sure Bluetooth is enabled.</li>
           <li>Make sure the Home Assistant Companion App has Bluetooth permission: 
             <ul>
               <li>On iPhone, go to <b>Settings</b> > <b>Privacy & Security</b> and enable <b>Bluetooth</b> for Home Assistant.</li>
             </ul>
           </li>
-        <li>For Android: make sure you’ve enabled precise location service permissions for Home Assistant. It is used for onboarding only. You can disable it again afterward.</li>
+        <li>For Android: make sure you’ve enabled precise location service permissions for Home Assistant. It is used for onboarding only. You can disable it again afterward.
+          <ul>
+            <li>Go to <b>Settings</b> > <b>Apps</b> > <b>Home Assistant</b> > <b>Permissions</b> and enable <b>Location</b>, <b>Allow all the time</b> and <b>Use precise location</b>.</li>
+            <li>In the Companion app, go to <b>Settings</b> > <b>Companion app</b> > <b>Manage sensors</b> and enable the <b>Location sensors</b>.</li>
+          </ul>
+        </li>
       </ul>
     </div>
     <div>
