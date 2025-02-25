@@ -371,7 +371,7 @@ procedureDisassemble:
       image: 01_remove_pads_small.png
       content: |
         <ol>
-          <li>Remove the 4 rubber pads.</li>
+          <li>Remove the 4 rubber pads (they are not glued in).</li>
           <li>Take the crosshead screwdriver and unscrew the 4 screws.</li>
         </ol>
     - title: Remove the top enclosure
