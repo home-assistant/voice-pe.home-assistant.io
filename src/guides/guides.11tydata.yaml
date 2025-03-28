@@ -141,12 +141,6 @@ procedureAutomate:
             </ul>
           </li>
         </ul>
-    - title: Check out the automation example in YAML.
-      image: voice_automation_yaml.png
-      content: |
-        <ul>
-          <li>For inspiration, check out the <a href="https://gist.github.com/jlpouffier/68434e51c8e347e974a791f90914c591" target="_blank">automation example in YAML</a>.</li>
-        </ul>
 procedureScripts:
   title: Using scripts and automations to control the device
   steps:
