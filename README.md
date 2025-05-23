@@ -1,6 +1,9 @@
+
+The content of this website has been migrated to https://github.com/NabuCasa/support
+
 # Home Assistant Voice Preview Edition website
 
-This is the source of the Home Assistant Voice Preview Edition documentation website at [voice-pe.home-assistant.io](https://voice-pe.home-assistant.io). 
+This was the source of the Home Assistant Voice Preview Edition documentation website at [voice-pe.home-assistant.io](https://voice-pe.home-assistant.io). 
 
 ## Setup
 
